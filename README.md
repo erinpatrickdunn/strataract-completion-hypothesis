@@ -54,7 +54,7 @@ The most grounding feature of this framework is that it makes a specific, tablet
 
 Bismuth-209 has the largest nuclear magnetic moment of any stable nucleus. Lead-208 is doubly magic — the most geometrically symmetric stable nucleus, with a magnetic moment of essentially zero. Proton bombardment drives the transmutation Bi-209 → Pb-208, collapsing nuclear spin from $I = 9/2$ to $I = 0$. Under this framework, that transition is the maximum-contrast geometric reorganization available in stable matter.
 
-!Bi209 -> Pb208(Bi209_Pb208.gif)
+![Bi209 -> Pb208](Bi209_Pb208.gif)
 
 Three independent measurement channels are specified:
 
