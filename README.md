@@ -2,7 +2,7 @@
 
 **A multi-scale gravitational framework derived from first principles, with falsifiable predictions from laboratory benchtops to cosmological surveys.**
 
-*[Your Name] — Working Paper Suite, May–June 2026*
+*Erin Dunn — Working Paper Suite, May–June 2026*
 
 ---
 
@@ -157,6 +157,5 @@ The predictions are on record. The tests are defined. The framework is ready to 
 
 ## Contact
 
-*[Your Name]*
-*[Your affiliation or contact information]*
-*[Date]*
+*Erin Dunn*
+*June 17, 2026*
