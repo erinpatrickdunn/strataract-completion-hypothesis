@@ -167,7 +167,7 @@ This is an algebraic equation: torsion is instantaneously determined by the loca
 
 **Theorem 1 (Leading-Order Uniqueness)**
 
-*At quadratic order in $\psi$, in the low-density EFT regime ($\rho \ll \rho_c$), subject to the symmetries of $S_{\text{geo}}$, $Q_{\mu\nu} = \rho\,\eta\,u_\mu u_\nu$ is the unique rank-2 symmetric divergence-free tensor constructible from local spinor bilinears of $\psi$. Uniqueness holds modulo: (i) an overall coupling constant $\alpha$; (ii) subleading higher-order corrections suppressed by $\varepsilon(\rho) \leq 10^{-23}$ at galactic densities.*
+*\At quadratic order in $\psi$, in the low-density EFT regime ($\rho \ll \rho_c$), subject to the symmetries of $S_{\text{geo}}$, $Q_{\mu\nu} = \rho\,\eta\,u_\mu u_\nu$ is the unique rank-2 symmetric divergence-free tensor constructible from local spinor bilinears of $\psi$. Uniqueness holds modulo: (i) an overall coupling constant $\alpha$; (ii) subleading higher-order corrections suppressed by $\varepsilon(\rho) \leq 10^{-23}$ at galactic densities.*
 
 Three sequential filters -- rank-2 symmetry (F1), divergence-free (F2), quadratic in psi (F3) -- reduce the complete Fierz bilinear basis of ten candidates to a unique survivor: $C_3 = \rho(\bar{\psi}\psi)u_\mu u_\nu = Q_{\mu\nu}$. The Fierz decomposition of the general rank-2 bilinear tensor in four dimensions yields exactly ten independent structures. F1 (symmetry) eliminates antisymmetric bilinears (the axial tensor $A_{[\mu\nu]}$ and its duals). F2 (divergence-free) eliminates structures whose divergence is nonzero in the condensate vacuum. F3 (quadratic in psi) eliminates quartic and higher contributions, relegating them to Term 3 at the density hierarchy established in P.2a. The unique survivor is $Q_{\mu\nu}$ up to the overall coupling constant $\alpha$, which is not fixed by the symmetry argument and must be determined experimentally (the Bi-209 calibration, Paper A Section 5).
 
@@ -187,7 +187,7 @@ At galactic densities ($\rho \sim 10^{-24}$~g/cm$^3$), quartic corrections to $Q
 
 **Theorem 2 (Regime-Conditional Normalization)**
 
-*For the geometric state spinor $\psi$ satisfying the field equations of $S_{\text{geo}}$, the normalized current $u^\mu = J^\mu/(\bar{\psi}\psi)$ satisfies $u^\mu u_\mu = -c^2$ in the parity-preserving vacuum sector of $S_{\text{geo}}$, for all spinor configurations satisfying the equations of motion in that sector, within the low-density regime ($\rho \ll \rho_c$).*
+*\For the geometric state spinor $\psi$ satisfying the field equations of $S_{\text{geo}}$, the normalized current $u^\mu = J^\mu/(\bar{\psi}\psi)$ satisfies $u^\mu u_\mu = -c^2$ in the parity-preserving vacuum sector of $S_{\text{geo}}$, for all spinor configurations satisfying the equations of motion in that sector, within the low-density regime ($\rho \ll \rho_c$).*
 
 Proof via Fierz identity: $J^\mu J_\mu = -S^2 - P^2$, where $S = \bar{\psi}\psi$ and $P = \bar{\psi}\gamma^5\psi$. Parity symmetry of $S_{\text{geo}}$ enforces $P = \bar{\psi}\gamma^5\psi = 0$ in the parity-preserving vacuum. This gives $J^\mu J_\mu = -S^2$ and therefore $u^\mu u_\mu = J^\mu J_\mu/S^2 = -1$, i.e., $u^\mu u_\mu = -c^2$. The normalization holds as a theorem within the stated regime, not as a postulate. Outside the parity-preserving sector (relevant to the bounce, where $A^\mu \to -A^\mu$), $P$ may be nonzero and the normalization becomes regime-dependent. Full proof in previous revision, Steps 1-4.
 
@@ -197,7 +197,7 @@ Proof via Fierz identity: $J^\mu J_\mu = -S^2 - P^2$, where $S = \bar{\psi}\psi$
 
 **Theorem 3 (Rate Derivation)**
 
-*$\Gamma_{\text{decoh}} = (\alpha/m^2)(\lambda\rho)^2\kappa(T)$ and $\Gamma_{\text{recoh}} = (\alpha/m^2)(\lambda\rho)^2\kappa(T)f(T)$, where $\kappa(T) = d^2V_{\text{eff}}/d\eta^2$ evaluated at $\eta_{\text{eq}}(T)$ and $f(T) = \eta_{\text{eq}}(T)/\eta_{\text{max}}$. Both rates are fixed by action parameters $\{\alpha, \lambda, m\}$ and temperature $T$. No free parameters remain.*
+*\$\Gamma_{\text{decoh}} = (\alpha/m^2)(\lambda\rho)^2\kappa(T)$ and $\Gamma_{\text{recoh}} = (\alpha/m^2)(\lambda\rho)^2\kappa(T)f(T)$, where $\kappa(T) = d^2V_{\text{eff}}/d\eta^2$ evaluated at $\eta_{\text{eq}}(T)$ and $f(T) = \eta_{\text{eq}}(T)/\eta_{\text{max}}$. Both rates are fixed by action parameters $\{\alpha, \lambda, m\}$ and temperature $T$. No free parameters remain.*
 
 Derived from $S_{\text{geo}}$ via the finite-temperature effective potential computed by the Matsubara (imaginary-time) formalism. The effective potential $V_{\text{eff}}$(eta, T) is obtained by integrating out thermal fluctuations in the standard Matsubara loop expansion at one loop. The condensate equilibrium value $\eta_{\text{eq}}$(T) is the minimum of $V_{\text{eff}}$ at temperature T. The decoherence rate $\Gamma_{\text{decoh}}$ is the curvature of $V_{\text{eff}}$ at this minimum, governing the rate of return to equilibrium from above. The recoherence rate $\Gamma_{\text{recoh}}$ is the curvature times the equilibrium fraction f(T) = $\eta_{\text{eq}}$(T)/$\eta_{\text{max}}$, governing return from below.
 
@@ -209,7 +209,7 @@ Key limits: $T=0$ gives $\Gamma_{\text{decoh}}=0$ (perfect coherence, condensate
 
 **Theorem 4 (Term Distinction)**
 
-*Term 2 ($C_{\mu\nu} = \rho\,\eta\,u_\mu u_\nu$) is a propagating field effect governed by the Dirac equation for $\psi$. It persists and diffuses after matter moves. Diffusion timescale: $\tau_{\text{diff}} \sim R^2 m_{\text{eff}}/\hbar$. Term 3 ($\sim A_\mu A_\nu - \tfrac{1}{2}A_\rho A^\rho g_{\mu\nu}$) is a contact interaction. Torsion is algebraically determined by the Cartan equation and does not propagate. These properties follow directly from the field equations of $S_{\text{total}}$.*
+*\Term 2 ($C_{\mu\nu} = \rho\,\eta\,u_\mu u_\nu$) is a propagating field effect governed by the Dirac equation for $\psi$. It persists and diffuses after matter moves. Diffusion timescale: $\tau_{\text{diff}} \sim R^2 m_{\text{eff}}/\hbar$. Term 3 ($\sim A_\mu A_\nu - \tfrac{1}{2}A_\rho A^\rho g_{\mu\nu}$) is a contact interaction. Torsion is algebraically determined by the Cartan equation and does not propagate. These properties follow directly from the field equations of $S_{\text{total}}$.*
 
 The proof turns on the structure of the field equations. The Dirac equation for $\psi$ is a first-order PDE: it governs the propagation of $\psi$ through spacetime. A solution $\psi(x)$ at a given time determines $\psi$ at later times through the propagation of the Dirac equation. The condensate built from $\psi$ therefore propagates and diffuses. The diffusion timescale $\tau_{\text{diff}} \sim R^2 m_{\text{eff}}/\hbar$ follows from the mass term in the Dirac equation: a condensate field of mass $m_{\text{eff}}$ diffuses over a distance R on this characteristic timescale.
 
@@ -347,7 +347,7 @@ The condensate hum interpretation predicts a different spectral signature: indiv
 
 The geometric state spinor field psi is defined with covering group SU(2) x SU(2). This is the standard double cover of the four-dimensional rotation group SO(4), which is the local isometry group of the four-sphere S^4 and, in the spatial sector, of the three-sphere S³.
 
-**Lemma P.7.6.1** ($\mathrm{SU}(2) \cong S^3$): *$\mathrm{SU}(2)$ is diffeomorphic to the three-sphere $S^3$ as a smooth manifold. Explicitly: $\mathrm{SU}(2) = \{(a,b)\in\mathbb{C}^2 : |a|^2 + |b|^2 = 1\}$, which is homeomorphic to the unit sphere in $\mathbb{R}^4$.*
+**Lemma P.7.6.1** ($\mathrm{SU}(2) \cong S^3$): *\$\mathrm{SU}(2)$ is diffeomorphic to the three-sphere $S^3$ as a smooth manifold. Explicitly: $\mathrm{SU}(2) = \{(a,b)\in\mathbb{C}^2 : |a|^2 + |b|^2 = 1\}$, which is homeomorphic to the unit sphere in $\mathbb{R}^4$.*
 
 This is not a formal coincidence. SU(2) and S³ are the same topological and smooth manifold. A spinor field whose symmetry group is SU(2) x SU(2) is most naturally and consistently defined on a spatial manifold that is itself S³.
 
