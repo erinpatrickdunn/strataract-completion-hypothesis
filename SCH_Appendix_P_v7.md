@@ -93,13 +93,13 @@ This does not require each term to be independently divergence-free. It requires
 ## **P.0a.3 Exchange Channel Map**
 
 The three exchange channels between the source terms are:
-----------------------------------------------------------------------------------------------------
+
 Channel A (Term 1 <-> Term 2): Condensate decoherence/recoherence.
 
 Governed by: $u^\mu\nabla_\mu\eta = -\Gamma_{\text{decoh}}\,\eta + \Gamma_{\text{recoh}}\,(1-\eta)$
 
 Status: Rates derived (Theorem 3). Full $\nabla^\mu T_{\mu\nu}^{\text{total}} = 0$ verification: OPEN TARGET.
-----------------------------------------------------------------------------------------------------
+## 
 Channel B (Term 2 <-> Term 3): Condensate-torsion coupling at high density.
 
 Governed by: Cartan equation $T_{\lambda\mu\nu} = (\kappa\alpha/2)\,\varepsilon_{\lambda\mu\nu\rho}\,A^\rho$
@@ -107,7 +107,7 @@ Governed by: Cartan equation $T_{\lambda\mu\nu} = (\kappa\alpha/2)\,\varepsilon_
 Status: Algebraic at galactic densities (Term 3 suppressed by $\varepsilon \leq 10^{-23}$).
 
 At Planck density: OPEN TARGET (requires FLRW reduction).
-----------------------------------------------------------------------------------------------------
+## 
 Channel C (Term 1 <-> Term 3): Matter spin coupling to torsion.
 
 Governed by: Papapetrou-Dixon equations for spinning matter in torsionful spacetime.
@@ -115,7 +115,7 @@ Governed by: Papapetrou-Dixon equations for spinning matter in torsionful spacet
 Status: Subleading at galactic densities. Significant at neutron star and Planck densities.
 
 Full accounting: OPEN TARGET (part of Gordon decomposition programme, CT-ii).
-----------------------------------------------------------------------------------------------------
+## 
 
 ## **P.0a.4 What Is Closed and What Is Open**
 
