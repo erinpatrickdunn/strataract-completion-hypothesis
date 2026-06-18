@@ -1,0 +1,82 @@
+========================================================================
+SIGMA_E CLASSIFICATION — SCH Replication Study
+========================================================================
+
+Sigma column: STELLAR_SIGMA_1RE
+Joint controls: ['log_Ms_Re_cyl', 'log_Re_kpc', 'nsa_sersic_n', 'LW_AGE_1Re']
+
+========================================================================
+PART 1: rho(beta_z, sigma_e)
+  How much variance do beta_z and sigma_e share?
+  Small rho -> orthogonal; large rho -> shared latent driver
+========================================================================
+
+  Subsample              N   raw rho             p  |Ms,Re,n,age             p  sig
+  ------------------------------------------------------------------------------
+  Full                3650    +0.220      4.54e-41    +0.036      3.10e-02  *
+  Fast                2835    +0.199      1.10e-26    +0.010      6.05e-01  ns
+  Slow                 815    +0.070      4.51e-02    +0.123      4.21e-04  ***
+  Low                 1219    +0.110      1.27e-04    -0.026      3.57e-01  ns
+  Mid                 1214    +0.159      2.56e-08    +0.047      9.87e-02  ns
+  High                1217    +0.142      6.07e-07    +0.112      9.64e-05  ***
+  Low_fast            1113    +0.085      4.70e-03    -0.012      6.84e-01  ns
+  Low_slow             106    +0.037      7.08e-01    -0.029      7.68e-01  ns
+  Mid_fast            1090    +0.150      6.27e-07    +0.050      9.67e-02  ns
+  Mid_slow             124    +0.117      1.95e-01    +0.068      4.52e-01  ns
+  High_fast            632    +0.115      3.94e-03    +0.017      6.75e-01  ns
+  High_slow            585    +0.127      2.17e-03    +0.174      2.30e-05  ***
+
+========================================================================
+PART 2: THREE-WAY TABLE
+  Col A: rho(beta_z, sigma_e)  [shared variance]
+  Col B: partial rho(beta_z, rar_FF) | joint controls
+  Col C: partial rho(beta_z, rar_FF) | joint + sigma_e
+  Drop%: (|B| - |C|) / |B| * 100
+========================================================================
+
+  Subsample          N   A: rho_bz_sig   B: |joint         p_B  C: |joint+sig         p_C   Drop%  Classification
+  --------------------------------------------------------------------------------------------------------------
+  Full            3650        +0.220***    +0.128***    6.98e-15       +0.127***    1.38e-14     +1%  shared variance — beta_z robust to sigma inclusion
+  Fast            2835        +0.199***    +0.135***    6.67e-13       +0.137***    2.36e-13     -2%  shared variance — beta_z robust to sigma inclusion
+  Slow             815        +0.070*     +0.122***    4.76e-04       +0.063ns    7.41e-02    +49%  mixed — pct drop=49%
+  Low             1219        +0.110***    +0.151***    1.19e-07       +0.158***    3.09e-08     -4%  shared variance — beta_z robust to sigma inclusion
+  Mid             1214        +0.159***    +0.154***    7.29e-08       +0.152***    1.01e-07     +1%  shared variance — beta_z robust to sigma inclusion
+  High            1217        +0.142***    +0.116***    4.88e-05       +0.076**    7.64e-03    +34%  shared variance — confounder or mediator (report both)
+  Low_fast        1113        +0.085**    +0.134***    7.13e-06       +0.139***    3.59e-06     -3%  orthogonal — independence supported
+  Low_slow         106        +0.037ns    +0.301**    1.70e-03       +0.322***    7.78e-04     -7%  orthogonal — independence supported
+  Mid_fast        1090        +0.150***    +0.165***    4.64e-08       +0.162***    8.28e-08     +2%  shared variance — beta_z robust to sigma inclusion
+  Mid_slow         124        +0.117ns    +0.018ns    8.41e-01       +0.015ns    8.70e-01    +19%  shared variance — beta_z robust to sigma inclusion
+  High_fast        632        +0.115**    +0.116**    3.45e-03       +0.131**    1.00e-03    -12%  shared variance — beta_z robust to sigma inclusion
+  High_slow        585        +0.127**    +0.122**    3.17e-03       +0.044ns    2.85e-01    +64%  shared variance — confounder or mediator (report both)
+
+========================================================================
+PART 3: NARRATIVE SUMMARY
+========================================================================
+
+  The classification of sigma_e's role determines the reporting strategy:
+
+  SCENARIO A — orthogonal across all subsamples:
+    sigma_e carries no shared variance with beta_z.
+    The Firefly beta_z result stands as-is.
+    Sigma_e documented as separate finding (inclination artifact).
+    Report: primary result = Col B. Sigma robustness check = footnote.
+
+  SCENARIO B — shared variance, signal drops substantially with sigma:
+    Beta_z and sigma_e are measuring overlapping dynamical information.
+    Cannot determine confounder vs mediator from correlations alone.
+    Both specifications must be reported.
+    Report: Col B and Col C side by side. Interpret difference honestly.
+
+  SCENARIO C — shared variance, signal survives sigma inclusion:
+    Beta_z carries information beyond sigma_e.
+    Strongest possible result — robust to the hardest control.
+    Report: Col C as primary. Col B as comparison.
+    Clearly state: beta_z signal is not a sigma_e proxy.
+
+  Key subsample verdicts:
+    Full        : shared variance — beta_z robust to sigma inclusion
+    Fast        : shared variance — beta_z robust to sigma inclusion
+    Slow        : mixed — pct drop=49%
+    Mid         : shared variance — beta_z robust to sigma inclusion
+    Mid_fast    : shared variance — beta_z robust to sigma inclusion
+    Mid_slow    : shared variance — beta_z robust to sigma inclusion
