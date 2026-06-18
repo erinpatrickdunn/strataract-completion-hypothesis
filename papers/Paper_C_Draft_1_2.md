@@ -10,20 +10,17 @@ Paper C — Draft 1.2 | May 2026
 
 ### **Prefatory Note — Paper C**
 
-**The Strataract Completion Hypothesis: Geometric Condensate Signatures at the Particle Scale**
-
-Papers A and B establish the Strataract Completion Hypothesis (SCH) as a closed variational theory, evolving from the fundamental primitive of rotation through the galactic scale and outward to cosmology. The nuclear scale serves as the suite's experimental anchor: Bismuth-209 calibration fixes the free parameter $\alpha$ and the effective condensate mass $m_{\text{eff}}$.
+Papers A and B establish the Strataract Completion Hypothesis (SCH) as a closed variational theory, evolving from the fundamental primitive of rotation through the galactic scale and outward to cosmology. The nuclear scale serves as the suite's experimental anchor: Bismuth-209 calibration fixes the free parameter $\alpha$ and the effective condensate mass $m_{\text{eff}}$. 
 
 Paper C extends this framework into the particle sector. It introduces no new assumptions; rather, it applies the established SCH variational action to hadronic scales to derive specific, non-tuned predictions.
 
-This paper is explicitly conditional. Its central claim is: if **CT-xiv sub-target (a)** establishes that the geometric condensate is locally non-zero at hadronic scales—specifically, that non-equilibrium phase localization sustains $\eta \neq 0$ inside the $B$-meson decay vertex—then the condensate produces a mass-weighted modification of leptonic propagation.
+This paper is explicitly conditional. Its central claim is: if **CT-xiv sub-target (a)** establishes that the geometric condensate is locally non-zero at hadronic scales—specifically, that non-equilibrium phase localization sustains $\eta \neq 0$ inside the $B$-meson decay vertex—then the condensate produces a mass-weighted modification of leptonic propagation. 
 
-The consequences—including the generation hierarchy, the $\tau/\mu$ anomaly ratio of exactly $16.8$, the $q^2$ slope, and the cross-channel universality—are derived as parameter-free predictions dependent entirely on the lepton mass spectrum and the survival of the condensate ($\eta \neq 0$) at the decay scale.
+The consequences—including the generation hierarchy, the $\tau/\mu$ anomaly ratio of exactly $16.8$, the $q^2$ slope, and the cross-channel universality—are derived as parameter-free predictions dependent entirely on the lepton mass spectrum and the survival of the condensate ($\eta \neq 0$) at the decay scale. 
 
 The framework is released in this complete form to establish these predictions as a formal record in anticipation of Belle II data on $B \rightarrow K^* \tau^+ \tau^-$. A theory enters physics when it provides measurements capable of falsifying it faster than interpretation can insulate it. If the condensate survives at hadronic scales, the $\tau$-channel constitutes exactly that measurement. 
 
 No new particles are invoked. No new interactions are added. The condensate is inherent to the SCH framework. The question this paper addresses is whether it is manifest at hadronic scales—and if so, whether its signature is detectable.
-
 ## **Abstract**
 
 The Strataract Completion Hypothesis derives a geometric condensate from the Einstein-Cartan-Dirac action with a quartic spinor self-coupling. Papers A and B establish this condensate as the source of anomalous gravitational effects at galactic and cosmological scales. The condensate couples to all fermions through the scalar bilinear η = ψ̅ψ in S\_geo. This coupling is not restricted by scale: rotation, the primitive from which the framework is derived, has no preferred scale. The condensate is present and active at all scales; what varies is whether its effect is resolvable against the dominant physics of the process under examination.
