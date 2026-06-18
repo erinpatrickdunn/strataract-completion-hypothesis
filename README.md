@@ -141,7 +141,7 @@ This repository contains five documents comprising the working paper suite as of
 | **[Paper B](papers/Paper_B_Draft_1_4.md)** — Draft 1.4 | Empirical evidence programme: MaNGA replication, Earth flyby consistency check, proposed tests, exploratory directions | Companion |
 | **[Paper C](papers/Paper_C_Draft_1_2.md)** — Draft 1.2 | Particle-scale extension: B-meson angular anomaly, leptonic mass modification, nuclear scale survey | Companion |
 | **[Appendix P](papers/SCH_Appendix_P_v7.md)** — v7 | Full formal proofs: all four theorems, conservation architecture, density hierarchy, calculational programme | Proof document |
-<!-- | **[SCH Replication Study]** — Working Paper | Independent pipeline replication of the MaNGA rotational coherence staircase using JAM v2 and Firefly catalogues | Awaiting DES Y6 data | -->
+| **[SCH Replication Study](papers/SCH_Replication_Study_WorkingPaper_v1.md)** — Working Paper | Independent pipeline replication of the MaNGA rotational coherence staircase using JAM v2 and Firefly catalogues | Awaiting DES Y6 data |
 
 ---
 
