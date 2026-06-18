@@ -278,7 +278,7 @@ Draft 1.5 retains the fifth prediction inaccessible to particle dark matter mode
 
 ## **6.4 The Equivalence Principle**
 
-Etvos experiments constrain composition-dependent accelerations to below 10^(-13) of g. The framework is not ruled out because eta differential between laboratory test masses is small, both objects occupy the same local field, and nonlinear field saturation suppresses the coupling differential at terrestrial field densities. A formal quantitative demonstration remains an open requirement. The critical temperature T\_c ~ m\_eff / k\_B derived in Appendix P (Theorem 3) provides the framework for this calculation.
+Etvos experiments constrain composition-dependent accelerations to below $10^{-13}$ of g. The framework is not ruled out because eta differential between laboratory test masses is small, both objects occupy the same local field, and nonlinear field saturation suppresses the coupling differential at terrestrial field densities. A formal quantitative demonstration remains an open requirement. The critical temperature $T_c \sim m_{\text{eff}} / k_B$ derived in Appendix P (Theorem 3) provides the framework for this calculation.
 
 ## **6.5 Formal Status: Closed Challenges**
 
@@ -311,7 +311,7 @@ The framework contains four action parameters: the coupling constant $\alpha$, t
 
 **$R_\text{universe}$ ($S^3$ topology scale):** Not an action parameter but a cosmological initial condition. Constrained from two independent handles: the CMB quadrupole suppression scale (Section 6.7) and the angular diameter distance turnaround in future standard ruler data (Section 6.8). Preliminary estimates: $R_\text{universe} \sim 2\text{-}4 \times R_\text{Hubble}$.
 
-The dimensional bridge between the flyby coupling constant K ~ 3 x 10^(-6) and the galactic coupling has the same v\_rot/c structure at both scales. The framework predicts both scale as alpha x (v\_rot/c) x f\_geom, where f\_geom is an order-unity geometric projection factor. The single coupling constant alpha governs both scales; the apparent difference in effective strength is entirely accounted for by the v\_rot/c ratio.
+The dimensional bridge between the flyby coupling constant $K \sim 3 \times 10^{-6}$ and the galactic coupling has the same $v_{\text{rot}}/c$ structure at both scales. The framework predicts both scale as $\alpha \times (v_{\text{rot}}/c) \times f_{\text{geom}}$, where $f_{\text{geom}}$ is an order-unity geometric projection factor. The single coupling constant alpha governs both scales; the apparent difference in effective strength is entirely accounted for by the v\_rot/c ratio.
 
 ## **6.7 CMB Constraint**
 
@@ -405,9 +405,72 @@ Sciama, D.W. (1964). The physical structure of general relativity. Reviews of Mo
 
 \[Full Appendix A text from Draft 1.2 retained unchanged in submission package\]
 
+## A.1 Purpose and Scope
+The modified Einstein field equation proposed in the main text is:
+$$G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa(T_{\mu\nu} + \alpha C_{\mu\nu})$$
+For mathematical self-consistency, the right-hand side must satisfy the contracted Bianchi identity:
+$$\nabla_\mu(T^{\mu\nu} + \alpha C^{\mu\nu}) = 0$$
+Standard General Relativity guarantees $\nabla_\mu T^{\mu\nu} = 0$. This appendix demonstrates $\nabla_\mu C^{\mu\nu} = 0$ for the geometric state tensor identified as $C_{\mu\nu} = Q_{\mu\nu} = \rho\eta u_\mu u_\nu$ under two physically motivated assumptions.
+
+## A.2 Assumptions
+1. **Co-moving $\eta$:** $u^\mu \nabla_\mu \eta = 0$ along fluid worldlines at dynamical timescales.
+2. **Geodesic motion:** $u^\mu \nabla_\mu u^\nu = 0$.
+
+*Note: Both are now derived consequences of the action $S_{\text{geo}}$ rather than independent postulates.*
+
+## A.3 Divergence Calculation
+Given $C^{\mu\nu} = \rho\eta u^\mu u^\nu$, the covariant divergence is:
+$$\nabla_\mu (\rho\eta u^\mu u^\nu) = (\nabla_\mu (\rho\eta u^\mu)) u^\nu + (\rho\eta u^\mu) \nabla_\mu u^\nu$$
+
+By assumption (2), $u^\mu \nabla_\mu u^\nu = 0$, so the second term vanishes. We are left with:
+$$\nabla_\mu (\rho\eta u^\mu) u^\nu = 0$$
+
+## A.4 Mass Conservation
+The term $\nabla_\mu (\rho\eta u^\mu)$ represents the conservation of the effective coupled mass-energy density. Expanding this:
+$$\eta \nabla_\mu (\rho u^\mu) + \rho u^\mu \nabla_\mu \eta = 0$$
+
+* The first term $\nabla_\mu (\rho u^\mu)$ vanishes by the standard continuity equation for matter.
+* The second term $\rho u^\mu \nabla_\mu \eta$ vanishes by assumption (1) (co-moving $\eta$).
+
+Thus, $\nabla_\mu C^{\mu\nu} = 0$, and the modified field equations are internally self-consistent.
+
+## A.5 Notation
+* **Metric signature:** $(-, +, +, +)$
+* **Greek indices:** $\mu, \nu, \lambda$ run over $0, 1, 2, 3$ (spacetime)
+* **$\nabla_\mu$:** Covariant derivative (equals $\partial_\mu$ in flat spacetime)
+* **$u^\mu$:** Four-velocity field, normalized $u_\mu u^\mu = -c^2$
+* **$\rho$:** Mass-energy density in the fluid rest frame
+* **$\eta$:** Coupling efficiency scalar field, $0 \le \eta \le 1$
+* **$\alpha$:** Dimensionless coupling constant
+* **$\kappa$:** Einstein gravitational constant $= 8\pi G/c^4$
+
 # **Appendix B: Supporting Observational Patterns**
 
 \[Retained unchanged from Draft 1.3 in submission package\]
+
+## B.1 Overview of Consistency
+As established in the formal proofs (Appendix P), the modified Einstein field equation:
+$$G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa(T_{\mu\nu} + \alpha C_{\mu\nu})$$
+is internally self-consistent under the mapping of the geometric state tensor $C_{\mu\nu}$ to the candidate tensor $Q_{\mu\nu} = \rho\eta u_\mu u_\nu$. This appendix provides the summary of the algebraic consistency demonstration, confirming that the additional source term does not violate the underlying symmetries of the metric.
+
+## B.2 Covariant Conservation
+The requirement for self-consistency is the satisfaction of the contracted Bianchi identity:
+$$\nabla_\mu (T^{\mu\nu} + \alpha C^{\mu\nu}) = 0$$
+Since $\nabla_\mu T^{\mu\nu} = 0$ is guaranteed by General Relativity, we require:
+$$\alpha \nabla_\mu (\rho \eta u^\mu u^\nu) = 0$$
+
+## B.3 Operational Assumptions
+Consistency is maintained under the following two conditions:
+1. **Co-moving efficiency ($\eta$):** The coupling scalar field satisfies $u^\mu \nabla_\mu \eta = 0$. This ensures that the efficiency of the geometric coupling is constant along the worldlines of the matter fluid at dynamical timescales.
+2. **Geodesic motion:** Matter follows trajectories governed by the total effective stress-energy. The identity $\nabla_\mu (\rho u^\mu) = 0$ (the standard continuity equation) ensures that the mass-energy conservation remains preserved alongside the geometric coupling.
+
+## B.4 Summary of Result
+Given these conditions, the divergence expands as:
+$$\nabla_\mu (\rho \eta u^\mu u^\nu) = u^\nu \nabla_\mu (\rho \eta u^\mu) + \rho \eta u^\mu \nabla_\mu u^\nu$$
+* The term $u^\mu \nabla_\mu u^\nu$ vanishes due to the geodesic assumption.
+* The term $\nabla_\mu (\rho \eta u^\mu)$ vanishes via the expansion $\eta \nabla_\mu (\rho u^\mu) + \rho u^\mu \nabla_\mu \eta$.
+
+As both components within the divergence sum to zero, the consistency of the field equations is maintained for all valid regimes of the scalar field $\eta$.
 
 # **Appendix C: Cosmological Implications -- Sympathetic Nucleation, Matter Accumulation, and the JWST Anomaly Cluster**
 
