@@ -55,7 +55,7 @@ The most grounding feature of this framework is that it makes a specific, tablet
 Bismuth-209 has the largest nuclear magnetic moment of any stable nucleus. Lead-208 is doubly magic — the most geometrically symmetric stable nucleus, with a magnetic moment of essentially zero. Proton bombardment drives the transmutation Bi-209 → Pb-208, collapsing nuclear spin from $I = 9/2$ to $I = 0$. Under this framework, that transition is the maximum-contrast geometric reorganization available in stable matter.
 
 <p align="center">
-  <img src="Bi209_Pb208.gif" alt="Bi209 -> Pb208">
+  <img src="media/Bi209_Pb208.gif" alt="Bi209 -> Pb208">
 </p>
 
 Three independent measurement channels are specified:
@@ -139,11 +139,11 @@ This repository contains five documents comprising the working paper suite as of
 
 | Document | Description | Status |
 |----------|-------------|--------|
-| **Paper A** — Draft 1.5 | Core framework: derivation, theorems, primary observational tests, Bi-209 experiment, cosmological extensions | Main paper |
-| **Paper B** — Draft 1.4 | Empirical evidence programme: MaNGA replication, Earth flyby consistency check, proposed tests, exploratory directions | Companion |
-| **Paper C** — Draft 1.2 | Particle-scale extension: B-meson angular anomaly, leptonic mass modification, nuclear scale survey | Companion |
-| **Appendix P** — v7 | Full formal proofs: all four theorems, conservation architecture, density hierarchy, calculational programme | Proof document |
-| **SCH Replication Study** — Working Paper | Independent pipeline replication of the MaNGA rotational coherence staircase using JAM v2 and Firefly catalogues | Awaiting DES Y6 data |
+| **[Paper A](papers/Paper_A_Draft_1_5.md)** — Draft 1.5 | Core framework: derivation, theorems, primary observational tests, Bi-209 experiment, cosmological extensions | Main paper |
+| **[Paper B](papers/Paper_B_Draft_1_4.md)** — Draft 1.4 | Empirical evidence programme: MaNGA replication, Earth flyby consistency check, proposed tests, exploratory directions | Companion |
+| **[Paper C](papers/Paper_C_Draft_1_2.md)** — Draft 1.2 | Particle-scale extension: B-meson angular anomaly, leptonic mass modification, nuclear scale survey | Companion |
+| **[Appendix P](papers/SCH_Appendix_P_v7.md)** — v7 | Full formal proofs: all four theorems, conservation architecture, density hierarchy, calculational programme | Proof document |
+<!-- | **[SCH Replication Study]** — Working Paper | Independent pipeline replication of the MaNGA rotational coherence staircase using JAM v2 and Firefly catalogues | Awaiting DES Y6 data | -->
 
 ---
 
