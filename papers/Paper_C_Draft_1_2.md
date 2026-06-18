@@ -6,19 +6,23 @@ Paper C — Draft 1.2 | May 2026
 
 *Leptonic Final-State Modification and the B-Meson Angular Anomaly*
 
-*Working draft. Section 1 only. Companion to Papers A and B and Appendix P.*
+*Full Framework Release. Companion to Paper A (v1.5), Paper B (v1.4), and Appendix P (v7).*
 
-## **Prefatory Note — Draft 1.1**
+### **Prefatory Note — Paper C**
 
-Papers A and B build the Strataract Completion Hypothesis (SCH) from a single primitive — rotation as fundamental — upward through the galactic scale and outward to cosmology. The nuclear scale appears in those papers only as an experimental anchor: the Bismuth-209 calibration fixes the free parameter alpha and the effective condensate mass m\_eff. No theoretical predictions are made about particle physics or flavour phenomenology.
+**The Strataract Completion Hypothesis: Geometric Condensate Signatures at the Particle Scale**
 
-Paper C opens that territory. It does not extend the framework by adding new assumptions. It applies the framework as already written to a scale it has not yet been asked to address, and asks what it says there.
+Papers A and B establish the Strataract Completion Hypothesis (SCH) as a closed variational theory, evolving from the fundamental primitive of rotation through the galactic scale and outward to cosmology. The nuclear scale serves as the suite's experimental anchor: Bismuth-209 calibration fixes the free parameter $\alpha$ and the effective condensate mass $m_{\text{eff}}$.
 
-This paper is explicitly conditional. Its central claim is: if CT-xiv sub-target (a) establishes that the geometric condensate is locally nonzero at hadronic scales — specifically, that non-equilibrium phase localisation sustains η ≠ 0 inside the B-meson decay vertex on the relevant timescale — then the condensate produces a mass-weighted modification of leptonic propagation whose consequences are worked out in detail in Sections 2 through 5. The generation hierarchy, the tau/muon ratio of 16.8, the q² slope, and the cross-channel universality are all parameter-free conditional predictions: parameter-free because they follow from the lepton mass spectrum alone, conditional because they require η ≠ 0 at the decay scale. That condition is not yet established. CT-xiv sub-target (a) is the first and most fundamental calculational target in this paper.
+Paper C extends this framework into the particle sector. It introduces no new assumptions; rather, it applies the established SCH variational action to hadronic scales to derive specific, non-tuned predictions.
 
-The paper is released in this conditional form for one reason: the tau/muon ratio prediction of 16.8 should be on record before Belle II data on B → K\*τ⁺τ⁻ arrives. A theory only enters physics once there are measurements capable of killing it faster than interpretation can save it. If the condensate survives at hadronic scales, the tau channel is exactly that measurement. This paper places the prediction on record now, with full honesty about what it depends on.
+This paper is explicitly conditional. Its central claim is: if **CT-xiv sub-target (a)** establishes that the geometric condensate is locally non-zero at hadronic scales—specifically, that non-equilibrium phase localization sustains $\eta \neq 0$ inside the $B$-meson decay vertex—then the condensate produces a mass-weighted modification of leptonic propagation.
 
-No new particles are invoked. No new interactions are added. The condensate is already present in the framework. The question this paper asks is whether it survives at hadronic scales — and if it does, whether it is loud enough to hear.
+The consequences—including the generation hierarchy, the $\tau/\mu$ anomaly ratio of exactly $16.8$, the $q^2$ slope, and the cross-channel universality—are derived as parameter-free predictions dependent entirely on the lepton mass spectrum and the survival of the condensate ($\eta \neq 0$) at the decay scale.
+
+The framework is released in this complete form to establish these predictions as a formal record in anticipation of Belle II data on $B \rightarrow K^* \tau^+ \tau^-$. A theory enters physics when it provides measurements capable of falsifying it faster than interpretation can insulate it. If the condensate survives at hadronic scales, the $\tau$-channel constitutes exactly that measurement. 
+
+No new particles are invoked. No new interactions are added. The condensate is inherent to the SCH framework. The question this paper addresses is whether it is manifest at hadronic scales—and if so, whether its signature is detectable.
 
 ## **Abstract**
 
