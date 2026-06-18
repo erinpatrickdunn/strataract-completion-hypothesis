@@ -28,7 +28,7 @@ The modified field equation is:
 
 $$G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa \left[ T_{\mu\nu} + \alpha C_{\mu\nu} \right]$$
 
-where $C_{\mu\nu} = \rho\, \eta\, u_\mu u_\nu$ is the geometric state tensor encoding rotational organizational state, $\eta = \bar{\psi}\psi$ is a Lorentz scalar derived from the spinor field, and $\alpha$ is a dimensionless coupling constant to be fixed by experiment. General Relativity is recovered exactly when the axial current $A^\mu = 0$ — the isotropic, non-rotating ground state.
+where $C_{\mu\nu} = \rho \eta u_\mu u_\nu$ is the geometric state tensor encoding rotational organizational state, $\eta = \bar{\psi}\psi$ is a Lorentz scalar derived from the spinor field, and $\alpha$ is a dimensionless coupling constant to be fixed by experiment. General Relativity is recovered exactly when the axial current $A^\mu = 0$ — the isotropic, non-rotating ground state.
 
 ---
 
