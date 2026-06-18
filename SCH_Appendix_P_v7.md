@@ -187,7 +187,7 @@ At galactic densities ($\rho \sim 10^{-24}$~g/cm$^3$), quartic corrections to $Q
 
 **Theorem 2 (Regime-Conditional Normalization)**
 
-*\For the geometric state spinor $\psi$ satisfying the field equations of $S_{\text{geo}}$, the normalized current $u^\mu = J^\mu/(\bar{\psi}\psi)$ satisfies $u^\mu u_\mu = -c^2$ in the parity-preserving vacuum sector of $S_{\text{geo}}$, for all spinor configurations satisfying the equations of motion in that sector, within the low-density regime ($\rho \ll \rho_c$).*
+For the geometric state spinor $\psi$ satisfying the field equations of $S_{\text{geo}}$, the normalized current $u^\mu = J^\mu/(\bar{\psi}\psi)$ satisfies $u^\mu u_\mu = -c^2$ in the parity-preserving vacuum sector of $S_{\text{geo}}$, for all spinor configurations satisfying the equations of motion in that sector, within the low-density regime ($\rho \ll \rho_c$).*
 
 Proof via Fierz identity: $J^\mu J_\mu = -S^2 - P^2$, where $S = \bar{\psi}\psi$ and $P = \bar{\psi}\gamma^5\psi$. Parity symmetry of $S_{\text{geo}}$ enforces $P = \bar{\psi}\gamma^5\psi = 0$ in the parity-preserving vacuum. This gives $J^\mu J_\mu = -S^2$ and therefore $u^\mu u_\mu = J^\mu J_\mu/S^2 = -1$, i.e., $u^\mu u_\mu = -c^2$. The normalization holds as a theorem within the stated regime, not as a postulate. Outside the parity-preserving sector (relevant to the bounce, where $A^\mu \to -A^\mu$), $P$ may be nonzero and the normalization becomes regime-dependent. Full proof in previous revision, Steps 1-4.
 
