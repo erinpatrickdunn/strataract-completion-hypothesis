@@ -157,7 +157,7 @@ The predictions are on record. The tests are defined. The framework is ready to 
 
 ---
 
-## Contact
+## Contact (available upon request)
 
 *Erin Dunn*
 *June 17, 2026*
