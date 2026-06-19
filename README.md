@@ -106,8 +106,7 @@ This framework is built to be killed. The following are the primary falsificatio
 | Test | What would falsify SCH |
 |------|----------------------|
 | $S^3$ standard ruler test (JWST/Roman) | Monotonically decreasing angular size with redshift at all observed $z$, with no improvement of the $S^3$ fit over the flat-universe fit |
-| Antipodal CMB correlation (existing Planck data) | No statistically significant positive correlation between antipodal sky pixel pairs $T(\hat{n}) \times T(-\hat{n})$ above the $\Lambda$CDM baseline |
-
+| Antipodal CMB correlation (existing Planck data) | No statistically significant positive correlation between antipodal sky pixel pairs *T(n̂) × T(-n̂)* above the *ΛCDM* baseline |
 ### Particle scale (Paper C)
 | Test | What would falsify SCH |
 |------|----------------------|
