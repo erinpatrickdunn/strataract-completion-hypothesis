@@ -120,7 +120,7 @@ Geometric coupling efficiency degrades under environmental disruption through pr
 
 ## **2.4a The $\eta$ Evolution Equation**
 
-*\[Unchanged from Draft 1.3 -- $G_\text{decoh}$ and $G_\text{recoh}$ derived\]*
+*\[Unchanged from Draft 1.3 --* $G_\text{decoh}$ *and* $G_\text{recoh}$ *derived\]*
 
 **$u^\mu \nabla_\mu \eta = -G_\text{decoh} \eta + G_\text{recoh} (1 - \eta)$**
 
