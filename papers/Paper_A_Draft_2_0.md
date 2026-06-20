@@ -229,30 +229,22 @@ The isotropic ground state is the state of zero net w-spin — A_μ = 0, where A
 
 **The Geometric Resonance Theorem:** The geometric field couples to matter in proportion to the geometric overlap between the local matter configuration and the field's preferred eigenstate geometry. The field's preferred eigenstate is the maximally symmetric isotropic configuration — the 4D spherical ground state at every scale. This follows from the vacuum structure of the SU(2) × SU(2) spinor covering group. Full proof in Appendix P, Step 11.
 
-## 2.3 The Coupling Efficiency η — W-Spin Magnitude
+## 2.3 The Coupling Efficiency $\eta$ — W-Spin Magnitude
 
-At nuclear scales, geometric organizational state is encoded in the coupling efficiency η, identified as the spinor scalar bilinear:
+At nuclear scales, geometric organizational state is encoded in the coupling efficiency $\eta$, identified as the spinor scalar bilinear:
 
-$Every subatomic particle is a localized topological soliton — a self-consistent configuration of field energy with extent in all four spatial dimensions. Three of those dimensions are the familiar spatial dimensions of our observable universe. The fourth — call it the w-axis — is perpendicular to our three-dimensional slice of the cosmos.
+$$\eta = \bar{\psi}\psi$$
 
-The solitonic configuration rotates on the w-axis. This rotation is not a metaphor or an analogy. It is the actual physical motion of the soliton's structure in the fourth spatial dimension. And this rotation is mass.
+This is the w-spin magnitude described in Section 0.2 — the degree to which the local matter configuration departs from the isotropic zero-spin ground state. It is a Lorentz scalar by theorem (Appendix P, Theorem 2), which is the formal expression of the fact that w-spin magnitude is a physical property of the soliton independent of the observer's orientation.
 
-Mass is w-axis spin magnitude. More w-spin = more mass. A particle with no w-spin has no mass. It is light.
-
-This identification — mass as w-axis spin - is not postulated to fit observations. It falls out of the geometry. If a soliton rotates on the w-axis, it has angular momentum in 4D. Redirecting that angular momentum requires force. That resistance to redirection is what we measure as inertia. Inertia and mass are the same thing, and both are the resistance of a spinning 4D soliton to reorientation. The equivalence of inertial and gravitational mass - long treated as a mysterious coincidence requiring the equivalence principle - is a direct geometric consequence of this picture.
-
-The particle zoo follows from this. Particles differ in the magnitude and closure topology of their w-axis spin. The proton, electron, neutrino, and photon are not fundamentally different kinds of thing. They are solitons of different spin magnitude and different closure type threading the same S³ slice.$
-
-This is the w-spin magnitude described in Section 0.2 — the degree to which the local matter configuration departs from the isotropic zero-spin ground state. It is a Lorentz scalar by theorem (Appendix P, Theorem 2), which is the formal expression of the fact that w-spin magnitude is a physical property of the knot independent of the observer's orientation.
-
-η = 0 corresponds to the isotropic ground state — zero net w-spin, zero geometric coupling, exact GR recovery.
-η = 1 corresponds to maximum geometric coupling — maximum departure from isotropy, maximum strataract sourcing.
+$\eta = 0$ corresponds to the isotropic ground state — zero net w-spin, zero geometric coupling, exact GR recovery.
+$\eta = 1$ corresponds to maximum geometric coupling — maximum departure from isotropy, maximum strataract sourcing.
 
 The phenomenological form $\eta(Z,N) = \left|\int\psi_{\text{nuclear}}(r) Y_{00}(\theta,\phi) dV\right|^2 f(\beta_2, \beta_4, \ldots)$ remains valid as a computational tool for nuclear calculations. The spinor bilinear is the underlying physical definition.
 
 ## 2.4 Thermal Decoherence
 
-Geometric coupling efficiency degrades under environmental disruption. When a system is thermally agitated — collisions randomizing the w-spin orientations of individual knots — the net geometric coherence of the ensemble drops toward zero. This is thermal decoherence. It is the same process that dissolves matter toward light at epoch boundaries (Section 0.6), operating at the atomic and nuclear scale rather than the cosmic scale.
+Geometric coupling efficiency degrades under environmental disruption. When a system is thermally agitated — collisions randomizing the w-spin orientations of individual solitons — the net geometric coherence of the ensemble drops toward zero. This is thermal decoherence. It is the same process that dissolves matter toward light at epoch boundaries (Section 0.6), operating at the atomic and nuclear scale rather than the cosmic scale.
 
 The suppression function $f(\tau) = \tau_{\text{coll}}/(\tau_{\text{coll}} + \tau_{\text{coh}})$ approaches 1 when the collision timescale greatly exceeds the coherence recovery timescale and approaches 0 in the reverse limit.
 
@@ -411,7 +403,7 @@ The framework proposes that signatures currently attributed to dark matter are t
 
 ## 6.4 The Equivalence Principle
 
-E�tvös experiments constrain composition-dependent accelerations to below 10⁻¹³ of g. The framework is not ruled out because η differential between laboratory test masses is small, both objects occupy the same local field, and nonlinear field saturation suppresses the coupling differential at terrestrial field densities. A formal quantitative demonstration remains an open requirement.
+Eötvös experiments constrain composition-dependent accelerations to below 10⁻¹³ of g. The framework is not ruled out because η differential between laboratory test masses is small, both objects occupy the same local field, and nonlinear field saturation suppresses the coupling differential at terrestrial field densities. A formal quantitative demonstration remains an open requirement.
 
 ## 6.5 Formal Status: Closed Challenges
 
