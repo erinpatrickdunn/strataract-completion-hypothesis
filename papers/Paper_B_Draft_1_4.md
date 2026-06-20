@@ -6,7 +6,7 @@
 
 **Draft 1.4 | June 2026**
 
-*Companion paper to: Geometric State as a Gravitational Source Variable: A Multi-Scale Framework and Falsifiable Test Program (Paper A, Draft 1.5). Appendix P v7 contains the formal proofs.*
+*Companion paper to: Geometric State as a Gravitational Source Variable: A Multi-Scale Framework and Falsifiable Test Program (Paper A, Draft 2.0). Appendix P v8 contains the formal proofs.*
 
 Revised from Draft 1.3: Section 2 replaced in full — the original lambda\_R quintile staircase analysis is superseded by an independent replication using the JAM velocity anisotropy parameter beta\_z and the Firefly photometric mass estimator (sample N = 3,650; Zhu et al. 2023; Lu et al. 2024; Neumann et al. 2022). The beta\_z replication resolves the Jeans estimator bias and the lambda\_R proxy definition problem identified in external review. Companion paper reference updated to Appendix P v7. All other sections unchanged from Draft 1.3. Supersedes Draft 1.3.
 
