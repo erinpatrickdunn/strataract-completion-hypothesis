@@ -60,17 +60,25 @@ Space is a flat three-dimensional Euclidean manifold. It does not curve. What we
 
 These two statements are the bedrock. Everything else is derived from them together with the physical picture of what matter is.
 
-## 0.2 Matter is a 4D Knot. Mass is W-Axis Spin.
+## 0.2 Matter is a Localized Topological Soliton. Mass is W-Axis Spin.
 
-Every subatomic particle is a topological knot — a self-consistent configuration of field energy with extent in all four spatial dimensions. Three of those dimensions are the familiar spatial dimensions of our observable universe. The fourth — call it the w-axis — is perpendicular to our three-dimensional slice of the cosmos.
+Every subatomic particle is a localized topological soliton — a self-consistent configuration of field energy with extent in all four spatial dimensions. Three of those dimensions are the familiar spatial dimensions of our observable universe. The fourth — call it the w-axis — is perpendicular to our three-dimensional slice of the cosmos.
 
-The knot rotates on the w-axis. This rotation is not a metaphor or an analogy. It is the actual physical motion of the knot's structure in the fourth spatial dimension. And this rotation is mass.
+The solitonic configuration rotates on the w-axis. This rotation is not a metaphor or an analogy. It is the actual physical motion of the soliton's structure in the fourth spatial dimension. And this rotation is mass.
 
 **Mass is w-axis spin magnitude.** More w-spin = more mass. A particle with no w-spin has no mass. It is light.
 
-This identification — mass as w-axis spin — is not postulated to fit observations. It falls out of the geometry. If a knot rotates on the w-axis, it has angular momentum in 4D. Redirecting that angular momentum requires force. That resistance to redirection is what we measure as inertia. Inertia and mass are the same thing, and both are the resistance of a spinning 4D knot to reorientation. The equivalence of inertial and gravitational mass — long treated as a mysterious coincidence requiring the equivalence principle — is a direct geometric consequence of this picture.
+This identification — mass as w-axis spin - is not postulated to fit observations. It falls out of the geometry. If a soliton rotates on the w-axis, it has angular momentum in 4D. Redirecting that angular momentum requires force. That resistance to redirection is what we measure as inertia. Inertia and mass are the same thing, and both are the resistance of a spinning 4D soliton to reorientation. The equivalence of inertial and gravitational mass - long treated as a mysterious coincidence requiring the equivalence principle - is a direct geometric consequence of this picture.
 
-The particle zoo follows from this. Particles differ in the magnitude and closure topology of their w-axis spin. The proton, electron, neutrino, and photon are not fundamentally different kinds of thing. They are knots of different spin magnitude and different closure type threading the same S³ slice.
+The particle zoo follows from this. Particles differ in the magnitude and closure topology of their w-axis spin. The proton, electron, neutrino, and photon are not fundamentally different kinds of thing. They are solitons of different spin magnitude and different closure type threading the same S³ slice.
+
+## 0.3 The S³ Cosmos, the Strataract, and the Speed of Light
+
+The universe is an S³ — a three-sphere, a closed hyperspherical manifold — rotating on the w-axis. Every particle's w-spin is sympathetically coupled to this cosmic rotation. The local and the cosmological are not separate: the same rotation that spins a quark also rotates the cosmos. They are the same phenomenon at different scales.
+
+The strataract is the rotational pressure field of the S³ slice, felt locally by every knot embedded in it. It exerts symmetric pressure on every knot from both sides in the w-direction — holding matter to the three-dimensional slice. Where the strataract field is uniform, space behaves as flat vacuum. Where massive concentrations of w-spinning knots depress the field locally, neighboring matter falls along the resulting gradient. This is gravity — not curved space, but a strataract gradient.
+
+Light is a surface wave on the S³ — not a knot, not localized, not bound to any specific 3D position. A photon has zero w-spin. Without w-spin there is no knot structure, no slice-binding pressure, no inertia. The photon propagates tangentially to the S³ surface at the tangential surface velocity of the cosmos.
 
 ## 0.3 The S³ Cosmos, the Strataract, and the Speed of Light
 
