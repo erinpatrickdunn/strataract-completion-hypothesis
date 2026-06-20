@@ -57,14 +57,14 @@ The framework epistemic status table is updated to reflect the new derivation or
 The foundational bedrock of this multi-scale framework rests upon two invariant geometric constraints. Every subsequent field equation and cosmological derivation proceeds from this rigid coordinate architecture in tandem with the intrinsic topology of matter.
 
 **I. Absolute Parameterized Time**
-Time is defined strictly as a rigid, one-dimensional, monotonically increasing parameterizing variable (t). It is fundamentally decoupled from localized matter-energy distributions and is incapable of metric curvature, warping, or localized dilation. The framework establishes a strict global foliation of the cosmos, wherein all observers—regardless of kinematic state or gravitational potential—share an identical, absolute present moment.
+Time is defined strictly as a rigid, one-dimensional, monotonically increasing parameterizing variable ($t$). It is fundamentally decoupled from localized matter-energy distributions and is incapable of metric curvature, warping, or localized dilation. The framework establishes a strict global foliation of the cosmos, wherein all observers—regardless of kinematic state or gravitational potential—share an identical, absolute present moment.
 
 Consequently, the phenomenon traditionally interpreted as "time dilation" is recast not as a deformation of the temporal metric, but as a localized dynamic constraint on the internal state evolution of matter distributions. Kinematic and gravitational redshifting are manifestations of physical throttling on a system's internal mechanisms; clocks slow, but the underlying temporal parameter remains uniformly invariant.
 
 **II. Euclidean Spatial Background**
-Spatial geometry is modeled exclusively as a flat, three-dimensional Euclidean manifold $`\mathbb{R}^3`$ possessing no intrinsic elasticity or autonomous degrees of freedom. The mechanical interactions traditionally attributed to the curvature of a spacetime fabric are generated instead by gradients within a ubiquitous physical field—the strataract—that pervades this rigid background.
+Spatial geometry is modeled exclusively as a flat, three-dimensional Euclidean manifold ($\mathbf{R}^3$) possessing no intrinsic elasticity or autonomous degrees of freedom. The mechanical interactions traditionally attributed to the curvature of a spacetime fabric are generated instead by gradients within a ubiquitous physical field—the strataract—that pervades this rigid background.
 
-The pseudo-Riemannian metric formulation of General Relativity $`g_{\mu\nu}`$ is understood here as a highly successful effective field theory that mathematically correlates gravitational phenomenology by mapping the strataract gradient onto a fictitious, over-parameterized curved background. This geometric description is a phenomenological proxy rather than an ontological reality. A flat spatial background coupled to the dynamics of the strataract field is mathematically and physically sufficient to reproduce all observed gravitational behavior without requiring space itself to bend.
+The pseudo-Riemannian metric formulation of General Relativity ($g_{\mu\nu}$) is understood here as a highly successful effective field theory that mathematically correlates gravitational phenomenology by mapping the strataract gradient onto a fictitious, over-parameterized curved background. This geometric description is a phenomenological proxy rather than an ontological reality. A flat spatial background coupled to the dynamics of the strataract field is mathematically and physically sufficient to reproduce all observed gravitational behavior without requiring space itself to bend.
 
 ## 0.2 Matter is a Localized Topological Soliton. Mass is W-Axis Spin.
 
@@ -233,7 +233,15 @@ The isotropic ground state is the state of zero net w-spin — A_μ = 0, where A
 
 At nuclear scales, geometric organizational state is encoded in the coupling efficiency η, identified as the spinor scalar bilinear:
 
-$$\eta = \bar{\psi}\psi$$
+$Every subatomic particle is a localized topological soliton — a self-consistent configuration of field energy with extent in all four spatial dimensions. Three of those dimensions are the familiar spatial dimensions of our observable universe. The fourth — call it the w-axis — is perpendicular to our three-dimensional slice of the cosmos.
+
+The solitonic configuration rotates on the w-axis. This rotation is not a metaphor or an analogy. It is the actual physical motion of the soliton's structure in the fourth spatial dimension. And this rotation is mass.
+
+Mass is w-axis spin magnitude. More w-spin = more mass. A particle with no w-spin has no mass. It is light.
+
+This identification — mass as w-axis spin - is not postulated to fit observations. It falls out of the geometry. If a soliton rotates on the w-axis, it has angular momentum in 4D. Redirecting that angular momentum requires force. That resistance to redirection is what we measure as inertia. Inertia and mass are the same thing, and both are the resistance of a spinning 4D soliton to reorientation. The equivalence of inertial and gravitational mass - long treated as a mysterious coincidence requiring the equivalence principle - is a direct geometric consequence of this picture.
+
+The particle zoo follows from this. Particles differ in the magnitude and closure topology of their w-axis spin. The proton, electron, neutrino, and photon are not fundamentally different kinds of thing. They are solitons of different spin magnitude and different closure type threading the same S³ slice.$
 
 This is the w-spin magnitude described in Section 0.2 — the degree to which the local matter configuration departs from the isotropic zero-spin ground state. It is a Lorentz scalar by theorem (Appendix P, Theorem 2), which is the formal expression of the fact that w-spin magnitude is a physical property of the knot independent of the observer's orientation.
 
