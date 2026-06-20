@@ -5,13 +5,13 @@
 
 **Draft 2.0 | June 2026**
 
-Revised from Draft 1.5: Complete structural rewrite. The physical picture — localized topological soliton, w-axis spin as mass, S³ slice pressure as the origin of inertia and c — is now stated first, in plain language, before any formalism. The field equation is derived from this geometry rather than proposed as a modification to Einstein. The anomaly cluster is reframed as a set of predicted consequences rather than motivating puzzles. All theorems, calculational targets, falsifiable predictions, and experimental specifications are unchanged. Supersedes Draft 1.5.
+Revised from Draft 1.5: Complete structural rewrite. The physical picture — localized topological solitons, w-axis spin as mass, S³ slice pressure as the origin of inertia and c — is now stated first, in plain language, before any formalism. The field equation is derived from this geometry rather than proposed as a modification to Einstein. The anomaly cluster is reframed as a set of predicted consequences rather than motivating puzzles. All theorems, calculational targets, falsifiable predictions, and experimental specifications are unchanged. Supersedes Draft 1.5.
 
 ---
 
 ## Prefatory Note — Draft 2.0
 
-Drafts 1.1 through 1.5 built the Strataract Completion Hypothesis from the top down: field equations first, physical interpretation second. External development of the framework's ground floor — through direct geometric reasoning about localized topological soliton structure and w-axis rotation — revealed that this order inverted the actual logical priority. The field equations are not the foundation. They are the mathematical encoding of a physical picture that is simpler, more primitive, and more general than the equations themselves.
+Drafts 1.1 through 1.5 built the Strataract Completion Hypothesis from the top down: field equations first, physical interpretation second. External development of the framework's ground floor — through direct geometric reasoning about localized topological soliton structures and w-axis rotation — revealed that this order inverted the actual logical priority. The field equations are not the foundation. They are the mathematical encoding of a physical picture that is simpler, more primitive, and more general than the equations themselves.
 
 Draft 2.0 corrects this. The physical picture is stated first. The equations follow from it. Nothing in the mathematical content of Drafts 1.1–1.5 is retracted. The derivation order is reversed, and the physical grounding is made explicit throughout.
 
