@@ -6,7 +6,7 @@ Paper C — Draft 1.2 | May 2026
 
 *Leptonic Final-State Modification and the B-Meson Angular Anomaly*
 
-*Full Framework Release. Companion to Paper A (v1.5), Paper B (v1.4), and Appendix P (v7).*
+*Full Framework Release. Companion to Paper A (Draft 2.1), Paper B (Draft 1.5), and Appendix P (v9).*
 
 ### **Prefatory Note — Paper C**
 
