@@ -149,8 +149,6 @@ This repository contains seven documents comprising the working paper suite as o
 | **[Paper C](papers/Paper_C_Draft_1_3.md)** — Draft 1.3 | Particle-scale extension: B-meson angular anomaly, leptonic mass modification, nuclear scale survey | Companion |
 | **[Appendix P](papers/SCH_Appendix_P_v9.md)** — v9 | Full formal proofs: six theorems, conservation architecture, density hierarchy, calculational programme including CT-xix and CT-xx | Proof document |
 | **[SCH Replication Study](papers/SCH_Replication_Study_WorkingPaper_v1.md)** — Working Paper v1 | Independent pipeline replication of the MaNGA rotational coherence staircase using JAM v2 and Firefly catalogues | Awaiting DES Y6 data |
-| **[SCH GalacticEngine Physical Picture](papers/SCH_GalacticEngine_PhysicalPicture_v1.md)** — v1 | Physical picture document: black holes as rotational processors, antipodal convergence on $S^3$, coherence-forced halos, galactic filaments as interference patterns, new falsifiable predictions P-1 through P-5 | Companion |
-| **[SCH SPARC Analysis](papers/SCH_SPARC_Analysis_WorkingPaper_v1.md)** — Working Paper v1 | Pipeline execution of the Section 7.4 rotation curve flattening test against SPARC × Kormendy & Ho (2013) × van den Bosch (2016). Cross-match yields N = 9 galaxies — insufficient for a meaningful test. Data gap characterised; future data sources identified | First run — awaiting MBHBM* / WISDOM data |
 
 ---
 
