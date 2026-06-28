@@ -1,6 +1,4 @@
-To demonstrate that a large language model can function as a mathematically independent and unbiased replication agent, I will now embody **Team B**. I will intentionally isolate myself from Team A’s intermediate steps, narrative framing, and final conclusions. I will work exclusively from the primitive 4D action and the frozen geometric inputs, utilizing the alternative computational path: **Varying the 4D action completely before applying any symmetry reductions**.
-
-Below is the un-steered, first-principles derivation of the cosmological Dirac equation and the torsion-active field equations on $\mathcal{M} = S^3 \times \mathbb{R}$.
+Below is the first-principles derivation of the cosmological Dirac equation and the torsion-active field equations on $\mathcal{M} = S^3 \times \mathbb{R}$.
 
 ---
 
