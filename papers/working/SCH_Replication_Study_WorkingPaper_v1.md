@@ -91,7 +91,7 @@ The final sample of 3,650 galaxies is smaller than the approximately 8,969 used 
 
 The primary signal variable is the logarithmic gravitational mass excess within the effective radius, defined as:
 
-$$\text{log\_excess} = \log M_{t,R_e} - \log M_{*,R_e}$$
+$$\mathrm{log\_excess} = \log M_{t,R_e} - \log M_{*,R_e}$$
 
 where $\log M_{t,R_e}$ is the JAM NFW total mass enclosed within a sphere of effective radius and $\log M_{*,R_e}$ is the JAM NFW stellar mass enclosed within the same sphere. This quantity measures how much additional gravitational mass is present beyond the stellar mass alone. It is closely related to the RAR residual but is not identical: the full RAR residual requires the observed centripetal acceleration $g_{\text{obs}}$ and the baryonic prediction $g_{\text{bar}}$, which in turn require the DAP velocity dispersion maps. The `log_excess` variable is a proxy available from the JAM catalogue alone and is sufficient for the directional staircase test.
 
