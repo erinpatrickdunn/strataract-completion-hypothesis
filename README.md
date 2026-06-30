@@ -1,170 +1,175 @@
-# The Strataract Completion Hypothesis
+# The Strataract Completion Hypothesis (SCH)
 
-**A multi-scale gravitational framework derived from first principles, with falsifiable predictions from laboratory benchtops to cosmological surveys.**
+**A modified gravitational field equation in which the geometric organisational
+state of matter — the coherence of w-axis spin in a four-dimensional soliton
+picture — sources gravitational effects beyond mass-energy alone.**
 
-*Erin Dunn — Working Paper Suite, May–June 2026*
+This repository contains the working papers, formal derivations, and
+calculational programme for SCH: a multi-scale theoretical framework spanning
+particle physics, nuclear physics, galactic dynamics, and cosmology, together
+with the falsification tests and empirical pipelines used to evaluate it
+against existing data.
 
----
-
-## The Central Idea
-
-Einstein's field equations are extraordinarily successful. They describe gravity as the curvature of spacetime produced by mass and energy. But they encode only *what* matter is — its mass, its energy, its momentum — not *how* it is organized.
-
-This framework proposes that the geometric organizational state of matter constitutes an independent gravitational source variable. A galaxy whose stars orbit in coherent, organized rotation produces more gravitational effect than an identical mass of stars orbiting randomly. Not because of hidden particles. Not because the law of gravity is different. Because rotation, at a fundamental level, is not just something matter *does* — it is something matter *is*.
-
-That single idea, taken seriously and derived rigorously from an action principle, turns out to have consequences from the scale of atomic nuclei to the scale of the observable universe.
-
----
-
-## Why Rotation?
-
-The framework is built from one primitive: **rotation is fundamental**.
-
-Not rotation as a phenomenon that emerges at some energy scale. Not rotation as a secondary property of matter. Rotation as the bedrock geometric property of spacetime — present before particles, before fields, before spacetime had content.
-
-The minimal mathematical object that encodes rotational state in curved spacetime is a spinor field. The condensate ground state of that spinor field turns out to source gravity in a way that standard General Relativity does not account for. Everything else in this framework follows from that starting point.
-
-The modified field equation is:
-
-$$G_{\mu\nu} + \Lambda g_{\mu\nu} = \kappa \left[ T_{\mu\nu} + \alpha C_{\mu\nu} \right]$$
-
-where $C_{\mu\nu} = \rho \eta u_\mu u_\nu$ is the geometric state tensor encoding rotational organizational state, $\eta = \bar{\psi}\psi$ is a Lorentz scalar derived from the spinor field, and $\alpha$ is a dimensionless coupling constant to be fixed by experiment. General Relativity is recovered exactly when the axial current $A^\mu = 0$ — the isotropic, non-rotating ground state.
+**This is a hypothesis under active development, not an established theory.**
+Every claim in this repository carries an explicit epistemic status — theorem,
+derived result, prediction, conjecture, or open question — and every major
+prediction carries a stated falsification condition. The project is organised
+specifically to make it easy to tell which parts of SCH are settled
+mathematics, which are open calculational targets, and which have already
+been tested against data.
 
 ---
 
-## What It Explains
+## Start Here
 
-The framework addresses a cluster of observational anomalies that individually have partial explanations but collectively point at something missing from the standard picture.
+If you read one thing, read **Paper A**. It states the physical picture in
+plain language (Section 0, no equations) before giving the mathematical
+encoding. Understanding Section 0 of Paper A is sufficient to understand what
+SCH claims; the rest is precision.
 
-**Galactic rotation curves.** Stars at the outer edges of spiral galaxies orbit far faster than the visible mass predicts. The standard response is to invoke dark matter halos. This framework proposes instead that the coherent rotational organization of the galaxy itself contributes additional gravitational sourcing — and that the effect should be strongest in the most coherently rotating systems.
-
-**The morphology–lensing correlation.** Rounder, more isotropic elliptical galaxies show stronger gravitational lensing than elongated ones of equal mass. Particle dark matter has no mechanism to produce this: dark matter tracks mass, not shape. Geometric organizational state does.
-
-**The Bullet Cluster.** The lensing signal follows the galaxies, not the gas, through a high-speed cluster collision. This framework explains it as *geometric stripping*: the shock-heated gas loses its organizational coherence instantly, while the stellar matter retains its rotational structure and continues sourcing the geometric field.
-
-**JWST early massive galaxies.** The James Webb Space Telescope is finding galaxies at redshifts $z \sim 10$–16 that are too massive, too compact, and formed too early relative to standard cosmological predictions. The framework addresses this through a bounce cosmology mechanism in which each prior cosmic cycle deposits additional net baryonic matter into the next cycle's initial conditions.
-
-**CMB large-angle anomalies.** The observed suppression of CMB power at the largest angular scales ($\ell = 2, 3$) has no natural explanation in a flat universe. The $\mathrm{SU}(2) \times \mathrm{SU}(2)$ covering group of the spinor field identifies $S^3$ (the three-sphere) as the natural spatial topology — which introduces a topological cutoff on the power spectrum at exactly the observed scale.
-
-**The dark matter halo as coherence-forced region.** The galactic engine picture (Paper A Section 2.11) identifies the dark matter halo not as a particle population but as the region within which the central black hole's condensate hum maintains rotational coherence in halo matter against thermal decoherence. The halo boundary is set by the black hole's emission power and the thermal decoherence rate of the surrounding matter — both in principle calculable from the framework parameters.
-
----
-
-## The Bismuth-209 Experiment
-
-The most grounding feature of this framework is that it makes a specific, tabletop laboratory prediction.
-
-Bismuth-209 has the largest nuclear magnetic moment of any stable nucleus. Lead-208 is doubly magic — the most geometrically symmetric stable nucleus, with a magnetic moment of essentially zero. Proton bombardment drives the transmutation Bi-209 → Pb-208, collapsing nuclear spin from $I = 9/2$ to $I = 0$. Under this framework, that transition is the maximum-contrast geometric reorganization available in stable matter.
-
-<img src="media/Bi209_Pb208.gif">
-
-Three independent measurement channels are specified:
-
-| Channel | What is measured | SM prediction | SCH prediction |
-|---------|-----------------|---------------|----------------|
-| **A** — Near-field photon deflection | Angular deviation of a laser beam through the interaction region, coincidence-triggered on individual transmutation events | Zero deviation | Measurable angular deflection $\propto \alpha$ |
-| **B** — Calorimetric anomaly | Energy balance during bombardment | Heat = deposited beam energy | Anomalous calorimetric deficit at the transition moment |
-| **C** — Torsion timing signature | Coincidence timing between the spin collapse and the calorimetric signal | Smooth thermal profile | Sharp spike at the spin transition, temporally distinct from Channel B |
-
-This experiment fixes the free parameter $\alpha$ and the effective condensate mass $m_\text{eff}$. Every quantitative prediction in the framework — from galaxy rotation curves to the NANOGrav frequency band — chains through this single calibration.
-
-If Channels A, B, and C all return null results at sufficient sensitivity, the framework's coupling to nuclear matter is falsified at the relevant scale.
+| If you want to know... | Read... |
+|---|---|
+| What SCH claims, physically | `papers/Paper_A.md`, Section 0 |
+| The full mathematical framework and falsifiable test program | `papers/Paper_A.md` |
+| The formal proof that the framework is a closed variational theory | `papers/Appendix_P.md` |
+| Empirical evidence, observational tests, and lab proposals | `papers/Paper_B.md` |
+| The particle-physics extension (B-meson anomaly) | `papers/Paper_C.md` |
+| What is currently being calculated, and what isn't settled yet | `papers/working/README.md` |
+| What has been superseded and why | `papers/superseded/` |
+| Plots, diagrams, animations | `media/` |
 
 ---
 
-## The Formal Structure
+## Repository Structure
 
-This is not a phenomenological patch on General Relativity. The framework is derived from the Einstein–Cartan–Dirac action with a quartic spinor self-coupling:
+```
+papers/
+├── Paper_A.md              Physical framework, predictions, falsification tests
+├── Paper_B.md               Empirical evidence, observational/lab proposals
+├── Paper_C.md                Particle-scale extension (B-meson anomaly)
+├── Appendix_P.md              Formal variational closure and proofs
+│
+├── working/                 Active calculational programme — NOT frozen
+│   ├── README.md              Index: status, dependencies, outstanding work
+│   └── ...                    Derivations, proof attempts, pipelines
+│
+└── superseded/               Retired drafts and superseded working documents
+    └── ...                     Retained for the historical/derivation record
 
-$$S_{\text{geo}} = \int d^4x\, e \left[ \frac{i}{2}\left(\bar{\psi}\gamma^a e^{\mu}_a D_\mu \psi - \text{h.c.}\right) - m\bar{\psi}\psi - \frac{\lambda}{4}(\bar{\psi}\psi)^2 \right]$$
+media/
+└── ...                       Figures, diagrams, animations
+```
 
-Six theorems establish the closed variational and physical structure (Appendix P v9):
+### The Four Documents
 
-- **Theorem 1** — $Q_{\mu\nu} = \rho\,\eta\,u_\mu u_\nu$ is the *unique* rank-2 symmetric divergence-free tensor constructible from the spinor bilinears at quadratic order, given the symmetries of the action.
-- **Theorem 2** — The coupling efficiency $\eta = \bar{\psi}\psi$ is a Lorentz scalar. The four-velocity $u^\mu = J^\mu / (\bar{\psi}\psi)$ satisfies $u^\mu u_\mu = -c^2$ in the parity-preserving vacuum sector.
-- **Theorem 3** — The decoherence and recoherence rates $\Gamma_\text{decoh}$ and $\Gamma_\text{recoh}$ are derived from the finite-temperature effective potential via the Matsubara formalism. No free parameters remain.
-- **Theorem 4** — The condensate $C_{\mu\nu}$ is a propagating field (Term 2) governed by the Dirac equation; torsion (Term 3) is a contact interaction algebraically determined by the Cartan equation. These are physically and observationally distinct.
-- **Theorem 5** — The speed of light is derived as $c(t) = \omega(t) \cdot R_{\text{cosmic}}(t)$, the tangential surface velocity of the $S^3$ manifold. Photons are minimum-w-spin ($\eta \approx \eta_{\min} > 0$) surface waves. Gravitational lensing confirms the photon w-spin is nonzero. The constancy of $c$ in local experiments follows from the $S^3$ geometry rather than being postulated.
-- **Theorem 6** — The states $\eta = \eta_{\min}$ (light) and $\eta \gg \eta_{\min}$ (matter) are topologically distinct phases separated by a first-order phase boundary. The matter-light distinction is a phase transition, not a speed difference.
+**Paper A** — *Geometric State as a Gravitational Source Variable.* The
+physical picture (matter as a 4D rotating soliton, mass as w-axis spin, the
+universe as a closed $S^3$), the modified field equation, the anomaly cluster
+this predicts (rotation curves, the Bullet Cluster, JWST early galaxies), and
+the primary falsifiable test program. Contains a full epistemic status table
+mapping every claim to AXIOM / DERIVED / THEOREM / PREDICTION / CONJECTURE.
 
-General Relativity is recovered *exactly* as the torsion-free limit. This is not an approximation.
+**Appendix P** — *Proof of Closure.* The formal Einstein-Cartan-Dirac action,
+the variational derivation of the field equation, and the theorems
+establishing GR recovery, tensor uniqueness, and the FLRW cosmological
+reduction. This is the document that makes SCH a closed variational theory
+within its stated regime, rather than a collection of physically-motivated
+postulates. Updated when a calculational target in `working/` closes and its
+result is verified.
 
----
+**Paper B** — *Empirical Evidence and Observational Tests.* What has actually
+been computed against public data (the MaNGA rotational coherence signal),
+cross-scale consistency checks (the Earth flyby anomaly), and a set of
+proposed tests — JWST standard ruler, post-merger lensing timescales, the
+Ampère force anomaly, NANOGrav, antipodal CMB correlation — each with an
+explicit falsification condition and an honest statement of what data is
+still needed.
 
-## How to Falsify This
+**Paper C** — *Particle-Scale Extension.* A conditional extension of SCH into
+the leptonic sector, proposing a mass-weighted condensate coupling as a
+candidate mechanism for the B-meson angular anomaly. Explicitly conditional
+on an unresolved calculational target (CT-xiv); includes a sharp,
+parameter-free falsification target (the tau/muon anomaly ratio ≈ 16.8).
 
-This framework is built to be killed. The following are the primary falsification conditions, organized by scale.
+### `papers/working/`
 
-### Laboratory scale
-| Test | What would falsify SCH |
-|------|----------------------|
-| Bi-209 → Pb-208 transmutation (Channels A, B, C) | All three channels return null results at sensitivity sufficient to detect the predicted coupling $\alpha$ |
+This is where the framework is actually being built right now. It contains
+open derivations, proof attempts (including ones that were wrong and were
+superseded — those are kept, not deleted), numerical pipelines, and the
+running list of calculational targets (CT-i through CT-xx and beyond) and
+proof targets (PT-1 through PT-4).
 
-### Galactic scale
-| Test | What would falsify SCH |
-|------|----------------------|
-| MaNGA × DES: $\lambda_R$ vs. weak lensing at fixed stellar mass | No statistically significant monotonic dependence of lensing on rotational coherence after mass controls |
-| SLACS: metallicity vs. Einstein radius at fixed total mass | No positive residual correlation between metallicity and Einstein radius in the thermally controlled sample |
-| Rotation curve flattening radius vs. central BH mass | No positive partial correlation at fixed stellar mass — *awaiting data*: requires direct dynamical BH masses for N ≥ 30 late-type spirals; current cross-match yields N < 10 (pipeline confirmed June 2026; expected from MBHBM* and WISDOM/ALMA programmes) |
+**Start with `papers/working/README.md`.** It indexes every document by
+status (OPEN / CLOSED / SUPERSEDED / BLOCKED), lists what each depends on and
+unlocks, and gives a dependency graph for the active calculational chains.
+This is the most up-to-date single source for "what is SCH's current state."
 
-### Cosmological scale
-| Test | What would falsify SCH |
-|------|----------------------|
-| $S^3$ standard ruler test (JWST/Roman) | Monotonically decreasing angular size with redshift at all observed $z$, with no improvement of the $S^3$ fit over the flat-universe fit |
-| Antipodal CMB correlation (existing Planck data) | No statistically significant positive correlation between antipodal sky pixel pairs $T(\hat{n}) \times T(-\hat{n})$ above the $\Lambda$CDM baseline |
+Documents in `working/` are not citable as settled results. They are
+promoted — their results migrated into Appendix P or one of the papers, with
+independent verification — once their open verification items (marked IVN
+throughout) are cleared.
 
-### Particle scale (Paper C)
-| Test | What would falsify SCH |
-|------|----------------------|
-| B-meson tau channel: $B \to K^* \tau^+ \tau^-$ | Tau/muon anomaly ratio significantly different from $m_\tau / m_\mu \approx 16.8$ |
-| Hadronic angular observables in $B^0 \to K^{*0} \mu^+ \mu^-$ | Hadronic side deviates from Standard Model predictions (SCH predicts purely leptonic modification) |
+### `papers/superseded/`
 
-The framework survives if and only if all of these tests return positive results in the predicted direction. A single robust null result at sufficient sensitivity is a genuine falsification.
+Retired paper drafts and working documents that have been replaced. Nothing
+is deleted from this project; when a draft or derivation is superseded, the
+prior version moves here intact, with a note on what replaced it and why.
+This preserves the derivation record — including dead ends — which matters
+for a framework under active mathematical development.
 
----
+### `media/`
 
-## Open Proof and Calculational Targets
-
-Several theoretical claims are stated as predictions with outstanding formal derivations. This is an honest accounting, not a weakness. The algebraic structure of the theory points clearly in each direction; the formal calculations are identified targets.
-
-| Target | Claim | Status |
-|--------|-------|--------|
-| **PT-1** | The antipodal map on $S^3$ acts as $-1$ on the spinor field through the bounce, inducing $A^\mu \to -A^\mu$ (chirality inversion, cyclic alternation) | Proof outstanding; CT-viii prerequisite |
-| **PT-2** | Bogoliubov analysis of pair creation in chiral condensate background — quantitative rate for sympathetic nucleation | Calculational target identified |
-| **CT-xiii** | Photon–condensate coupling cross section $\sigma(\omega)$; derivation of CMB monopole temperature from the condensate scrambling integral | Prerequisites: CT-vii + CT-viii |
-| **CT-xiv** | Leptonic self-energy in the condensate background; establishes whether the condensate produces a mass-weighted modification of lepton propagation | First target of Paper C |
-| **CT-xix** | Antipodal condensate coupling: formal derivation of the mechanism by which condensate waves on $S^3$ converge at their antipodal points and couple into global rotational modes, closing the bounce cosmology energy cycle | Prerequisites: CT-vii + CT-viii |
-| **CT-xx** | Thermodynamic consistency of the galactic engine coherence-forcing mechanism; entropy accounting establishing that the SMBH pump pays the entropy cost of halo coherence; information-export consequence assessment | Prerequisites: CT-xix + Bi-209 calibration |
-
----
-
-## The Paper Suite
-
-This repository contains seven documents comprising the working paper suite as of June 2026.
-
-| Document | Description | Status |
-|----------|-------------|--------|
-| **[Paper A](papers/Paper_A_Draft_2_2.md)** — Draft 2.2 | Core framework: physical picture, derivation, theorems, galactic engine mechanism, primary observational tests, Bi-209 experiment, cosmological extensions | Main paper |
-| **[Paper B](papers/Paper_B_Draft_1_6.md)** — Draft 1.6 | Empirical evidence programme: MaNGA replication, Earth flyby consistency check, proposed tests, exploratory directions. Section 7.4 rotation curve test reclassified as awaiting data following pipeline execution | Companion |
-| **[Paper C](papers/Paper_C_Draft_1_3.md)** — Draft 1.3 | Particle-scale extension: B-meson angular anomaly, leptonic mass modification, nuclear scale survey | Companion |
-| **[Appendix P](papers/SCH_Appendix_P_v9.md)** — v9 | Full formal proofs: six theorems, conservation architecture, density hierarchy, calculational programme including CT-xix and CT-xx | Proof document |
-| **[SCH Replication Study](papers/SCH_Replication_Study_WorkingPaper_v1.md)** — Working Paper v1 | Independent pipeline replication of the MaNGA rotational coherence staircase using JAM v2 and Firefly catalogues | Awaiting DES Y6 data |
-
----
-
-## Current State
-
-The framework is a working paper suite, not a published result. It is posted here in the spirit of open science: to invite scrutiny, to put predictions on record before the relevant measurements are made, and to make the falsification conditions explicit.
-
-What is established: a closed variational theory with six formal theorems, a complete density hierarchy, regime-conditional claims throughout, a clear parameter-fixing programme anchored to a tractable laboratory experiment, and a physical ground floor connecting the spinor field to the w-spin of matter, the derivation of $c$ as a geometric readout, and the matter-light distinction as a first-order phase transition.
-
-What is open: several calculational targets, two formal proof targets, and the experimental programme itself. The Bi-209 calibration has not been run. The MaNGA–DES lensing cross-match has not been performed. The tau channel B-meson measurement is pending Belle II luminosity. The rotation curve flattening test is correctly specified but awaits direct dynamical BH mass measurements for a sufficient sample of late-type spirals. The antipodal condensate coupling (CT-xix) and thermodynamic consistency (CT-xx) require the condensate propagator and FLRW reduction as prerequisites.
-
-The predictions are on record. The tests are defined. The framework is ready to be falsified.
+Figures, diagrams, and animations supporting the papers.
 
 ---
 
-## Contact (available upon request)
+## How to Engage With This Project
 
-*Erin Dunn*
-*June 2026*
+**If you want to check the math:** Appendix P and the documents in
+`papers/working/` are written with explicit, numbered derivation steps and
+IVN (independent-verification-needed) flags at every sign-convention-sensitive
+step. Independent verification of these is the single highest-value
+contribution at this stage — several results currently rest on internal
+review only.
+
+**If you want to check a prediction against data:** Every falsifiable claim
+in Papers A, B, and C has a stated falsification condition. Paper B Section 2
+and `papers/working/` contain a live empirical pipeline (the MaNGA rotational
+coherence replication) with full data provenance and a documented data gap.
+
+**If you want to know whether something is settled:** Check the epistemic
+status table in Paper A first, then the closure summary table in Appendix P.
+Anything not marked THEOREM or DERIVED should be treated as exactly what it
+says: a prediction, a conjecture, or an open question.
+
+**A standing methodological commitment of this project:** branches of the
+mathematics are not pruned because they produce an inconvenient or
+unexpected result. When a calculation has produced a result that
+contradicts an earlier physically-motivated claim, the claim has been
+revised and the discrepancy documented — see, for example, the chirality
+inversion question in `papers/working/`, where a topological argument
+originally presented as settled was found not to hold under direct
+calculation, and the framework's documentation was corrected accordingly.
+
+---
+
+## Status at a Glance
+
+- **Galactic-scale variational closure:** established (Appendix P, theorems closed).
+- **FLRW cosmological reduction:** derived (Appendix P v11, CT-viii), pending
+  full independent verification.
+- **Cosmological dynamics (bounce, two-phase expansion):** derived
+  (`papers/working/`, CT-ix), pending independent verification.
+- **Chirality inversion across the cosmological bounce:** open question,
+  revised from an earlier stronger claim — see `papers/working/README.md`.
+- **Primary empirical test (MaNGA rotational coherence):** directional
+  positive signal reported; quantitative confirmation pending two external
+  datasets.
+- **Laboratory calibration (Bismuth-209):** proposed, not yet performed.
+  This experiment fixes the framework's only two free parameters and is the
+  single highest-leverage open item across the entire programme.
+
+---
+
+*This README reflects the repository structure as of June 2026. For the most
+current state of active calculations, see `papers/working/README.md`.*
