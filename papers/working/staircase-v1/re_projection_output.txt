@@ -1,0 +1,145 @@
+========================================================================
+Re PROJECTION CHECK — SCH Replication Study
+========================================================================
+
+Hypothesis:
+  Face-on slow rotators appear more extended (larger apparent Re).
+  Larger Re -> smaller g_bar -> inflated RAR residual.
+  This would make the inclination-RAR correlation a pure projection
+  artifact with no physical content.
+
+Expected signature if hypothesis is true:
+  rho(inc_deg_cyl, Re_kpc)       NEGATIVE in slow rotators
+  rho(inc_deg_cyl, Re_arcsec)    NEGATIVE in slow rotators
+  (low inclination = face-on = larger apparent size)
+
+  After controlling for Re, rho(inc, rar_resid_FF) should shrink
+  substantially in slow rotators.
+
+========================================================================
+SECTION 1: rho(inc_deg_cyl, Re)
+  Negative rho = face-on galaxies appear larger.
+========================================================================
+
+  Re measure: Re_kpc
+  Subsample                                  N      rho             p  sig
+  --------------------------------------------------------------------
+  Full                                    3650   -0.250      3.79e-53  ***
+  Fast                                    2835   -0.312      5.62e-65  ***
+  Slow                                     815   -0.008      8.11e-01  ns
+  Low_fast                                1113   -0.137      4.30e-06  ***
+  Low_slow                                 106   -0.083      3.97e-01  ns
+  Mid_fast                                1090   -0.189      3.22e-10  ***
+  Mid_slow                                 124   -0.212      1.80e-02  *
+  High_fast                                632   -0.299      1.73e-14  ***
+  High_slow                                585   -0.067      1.05e-01  ns
+
+  Re measure: Re_arcsec_MGE
+  Subsample                                  N      rho             p  sig
+  --------------------------------------------------------------------
+  Full                                    3650   -0.187      6.08e-30  ***
+  Fast                                    2835   -0.234      2.01e-36  ***
+  Slow                                     815   -0.033      3.43e-01  ns
+  Low_fast                                1113   -0.065      3.07e-02  *
+  Low_slow                                 106   -0.030      7.62e-01  ns
+  Mid_fast                                1090   -0.149      7.15e-07  ***
+  Mid_slow                                 124   -0.212      1.80e-02  *
+  High_fast                                632   -0.262      2.10e-11  ***
+  High_slow                                585   -0.047      2.52e-01  ns
+
+  Re measure: log_Re_kpc
+  Subsample                                  N      rho             p  sig
+  --------------------------------------------------------------------
+  Full                                    3650   -0.250      3.79e-53  ***
+  Fast                                    2835   -0.312      5.62e-65  ***
+  Slow                                     815   -0.008      8.11e-01  ns
+  Low_fast                                1113   -0.137      4.30e-06  ***
+  Low_slow                                 106   -0.083      3.97e-01  ns
+  Mid_fast                                1090   -0.189      3.22e-10  ***
+  Mid_slow                                 124   -0.212      1.80e-02  *
+  High_fast                                632   -0.299      1.73e-14  ***
+  High_slow                                585   -0.067      1.05e-01  ns
+
+========================================================================
+SECTION 2: rho(inc, rar_FF) before and after controlling for Re
+  If Re mediates the inclination effect, partial rho should
+  drop substantially after adding Re to the control set.
+========================================================================
+
+  Using Re measure: Re_kpc
+
+  Subsample              N   raw rho           p       |Ms           p    |Ms,Re           p  drop?
+  -----------------------------------------------------------------------------------------------
+  Full                3643    +0.006ns    6.95e-01    +0.111***    2.14e-11    +0.087***    1.67e-07  ---
+  Fast                2829    +0.051**    6.64e-03    +0.114***    1.40e-09    +0.073***    9.57e-05    -44% drop
+  Slow                 814    +0.150***    1.71e-05    +0.217***    3.73e-10    +0.226***    7.16e-11    -50% drop
+  Low_fast            1111    +0.132***    1.05e-05    +0.128***    1.84e-05    +0.127***    2.08e-05     +3% drop
+  Low_slow             106    +0.201*     3.85e-02    +0.239*     1.36e-02    +0.237*     1.45e-02    -18% drop
+  Mid_fast            1086    +0.067*     2.84e-02    +0.075*     1.35e-02    -0.031ns    3.13e-01    +54% drop
+  Mid_slow             124    +0.309***    4.78e-04    +0.308***    4.96e-04    +0.223*     1.29e-02    +28% drop
+  High_fast            632    +0.191***    1.31e-06    +0.225***    1.09e-08    +0.112**    4.87e-03    +41% drop
+  High_slow            584    +0.133**    1.27e-03    +0.186***    6.02e-06    +0.194***    2.36e-06    -46% drop
+
+========================================================================
+SECTION 3: rho(Re, rar_resid_FF) — is Re itself predictive?
+  If Re drives the chain, Re should predict rar_FF
+  independently of inclination.
+========================================================================
+
+  Re measure: Re_kpc
+  Subsample                                  N      rho             p  sig
+  --------------------------------------------------------------------
+  Full                                    3643   +0.252      4.55e-54  ***
+  Fast                                    2829   +0.022      2.50e-01  ns
+  Slow                                     814   +0.461      3.77e-44  ***
+  Low_fast                                1111   -0.015      6.24e-01  ns
+  Low_slow                                 106   -0.115      2.41e-01  ns
+  Mid_fast                                1086   -0.402      1.87e-43  ***
+  Mid_slow                                 124   -0.169      6.10e-02  ns
+  High_fast                                632   -0.202      2.91e-07  ***
+  High_slow                                584   +0.202      8.47e-07  ***
+
+  Re measure: Re_arcsec_MGE
+  Subsample                                  N      rho             p  sig
+  --------------------------------------------------------------------
+  Full                                    3643   +0.103      4.22e-10  ***
+  Fast                                    2829   -0.014      4.52e-01  ns
+  Slow                                     814   +0.471      4.04e-46  ***
+  Low_fast                                1111   +0.087      3.78e-03  **
+  Low_slow                                 106   +0.017      8.63e-01  ns
+  Mid_fast                                1086   -0.345      9.51e-32  ***
+  Mid_slow                                 124   +0.004      9.62e-01  ns
+  High_fast                                632   -0.215      5.15e-08  ***
+  High_slow                                584   +0.335      9.02e-17  ***
+
+  Re measure: log_Re_kpc
+  Subsample                                  N      rho             p  sig
+  --------------------------------------------------------------------
+  Full                                    3643   +0.252      4.55e-54  ***
+  Fast                                    2829   +0.022      2.50e-01  ns
+  Slow                                     814   +0.461      3.77e-44  ***
+  Low_fast                                1111   -0.015      6.24e-01  ns
+  Low_slow                                 106   -0.115      2.41e-01  ns
+  Mid_fast                                1086   -0.402      1.87e-43  ***
+  Mid_slow                                 124   -0.169      6.10e-02  ns
+  High_fast                                632   -0.202      2.91e-07  ***
+  High_slow                                584   +0.202      8.47e-07  ***
+
+========================================================================
+SECTION 4: CHAIN SUMMARY for slow rotators
+========================================================================
+
+  Slow rotators (N=814):
+
+  Step A:  rho(inc, Re_kpc      )     =  -0.008  p=8.11e-01  ns
+  Step B:  rho(Re_kpc      , rar_FF)  =  +0.461  p=3.77e-44  ***
+  Step C:  rho(inc, rar_FF) raw       =  +0.150  p=1.71e-05  ***
+  Step D:  rho(inc, rar_FF)|Ms,Re     =  +0.226  p=7.16e-11  ***
+
+  If Steps A and B are both significant and Step D is near zero:
+    -> Re fully mediates the inc-rar_FF relationship.
+    -> The inclination effect is a size projection artifact.
+
+  If Step D remains large after controlling for Re:
+    -> Something else is driving the inclination-RAR correlation.
+    -> Consider: dust attenuation, sigma_e projection, sky position.
