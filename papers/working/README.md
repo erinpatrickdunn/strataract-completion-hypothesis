@@ -229,6 +229,22 @@ the audit trail.
 
 ---
 
+### 9. `SCH_IVNDE_BilinearResolution_v1.md`
+
+**Status:** CLOSED — canonical bilinear definitions established; downstream consistency audit initiated
+
+**Prerequisites:** SCH_IVN16_Resolution_v1.md (identification of IVN-D/E); CT-viii Appendix P P.9.3 (original bilinear definitions)
+
+**Unlocks:** IVN-F, IVN-G, IVN-H, IVN-I consistency audits; Appendix P v13 spinor-sector revision; re-verification of CT-viii, CT-ix, and all PT-1 documents using the corrected bilinear definitions
+
+**Summary:** Performs a clean-room re-derivation of the scalar, pseudoscalar, vector, and axial-vector bilinears directly from the Clifford algebra and the adopted gamma-matrix convention, resolving the outstanding IVN-D and IVN-E discrepancies identified in the IVN-16 Resolution. Demonstrates that the previous Appendix P P.9.3 expressions were inconsistent with the stated Dirac representation and replaces them with canonical expressions derived independently from first principles. Propagates the corrected bilinear identities through the spinor sector, identifying which subsequent derivations remain unchanged and which require re-verification. Establishes that the principal consequence is not an immediate physical revision but a formal consistency audit of the condensate sector, with IVN-F through IVN-I opened to determine whether the corrected reality structure represents a convention change or a genuine physical reformulation.
+
+**Open items carried forward:** IVN-F (Dirac equation consistency), IVN-G (Lagrangian reality conditions), IVN-H (physical interpretation of the condensate variables), and IVN-I (global propagation audit through CT-viii, CT-ix, PT-1, and Appendix P). The canonical bilinear definitions are considered resolved; remaining work concerns their consequences.
+
+**Cited by:** Appendix P v13 (planned P.9.3 revision); CT-viii re-verification; CT-ix re-verification; all future spinor-sector derivations.
+
+---
+
 ## Dependency Graph
 
 ```
