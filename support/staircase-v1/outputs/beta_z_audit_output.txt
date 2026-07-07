@@ -1,0 +1,123 @@
+(venv) erin@erin-desktop-linux:~/Desktop/Staircase Run v5$ python beta_z_audit.py
+/home/erin/Desktop/Staircase Run v5/beta_z_audit.py:159: ChainedAssignmentError: A value is being set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+Such inplace method never works to update the original DataFrame or Series, because the intermediate object on which we are setting values always behaves as a copy (due to Copy-on-Write).
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' instead, to perform the operation inplace on the original object, or try to avoid an inplace operation using 'df[col] = df[col].method(value)'.
+
+See the documentation for a more detailed explanation: https://pandas.pydata.org/pandas-docs/stable/user_guide/copy_on_write.html
+  df["rar_resid_firefly"].replace([np.inf, -np.inf], np.nan, inplace=True)
+Sample N=3650
+PHOTOMETRIC_MASS valid: 3643
+rar_resid_firefly valid:3643
+LW_AGE_1Re valid:       3606
+LW_Z_1Re valid:         3606
+nsa_sersic_n valid:     3650
+Eps_MGE valid:          3650
+Fast: 3307  Slow: 343
+
+======================================================================
+PART 1: MODEL-INTERNAL CIRCULARITY CHECK
+        beta_z vs rar_resid_JAM  (JAM mass in denominator)
+        beta_z vs rar_resid_FIREFLY (photometric mass, independent)
+======================================================================
+
+  --- Full (N=3643) ---
+  raw  rho(beta_z, rar_resid_JAM)                           N= 3643   rho=+0.082   p=7.69e-07
+  part rho(beta_z, rar_resid_JAM)|Ms,Re                     N= 3643   rho=+0.097   p=4.03e-09
+  raw  rho(beta_z, rar_resid_FIREFLY)                       N= 3643   rho=+0.107   p=8.87e-11
+  part rho(beta_z, rar_resid_FF)|Ms,Re                      N= 3643   rho=+0.105   p=2.19e-10
+
+  --- fast (N=3301) ---
+  raw  rho(beta_z, rar_resid_JAM)                           N= 3301   rho=+0.077   p=9.37e-06
+  part rho(beta_z, rar_resid_JAM)|Ms,Re                     N= 3301   rho=+0.085   p=9.51e-07
+  raw  rho(beta_z, rar_resid_FIREFLY)                       N= 3301   rho=+0.111   p=1.59e-10
+  part rho(beta_z, rar_resid_FF)|Ms,Re                      N= 3301   rho=+0.108   p=4.80e-10
+
+  --- slow (N=342) ---
+  raw  rho(beta_z, rar_resid_JAM)                           N=  342   rho=+0.154   p=4.18e-03
+  part rho(beta_z, rar_resid_JAM)|Ms,Re                     N=  342   rho=+0.260   p=1.09e-06
+  raw  rho(beta_z, rar_resid_FIREFLY)                       N=  342   rho=+0.116   p=3.17e-02
+  part rho(beta_z, rar_resid_FF)|Ms,Re                      N=  342   rho=+0.146   p=6.66e-03
+
+  --- Low (N=1217) ---
+  raw  rho(beta_z, rar_resid_JAM)                           N= 1217   rho=+0.098   p=6.24e-04
+  part rho(beta_z, rar_resid_JAM)|Ms,Re                     N= 1217   rho=+0.100   p=4.61e-04
+  raw  rho(beta_z, rar_resid_FIREFLY)                       N= 1217   rho=+0.090   p=1.58e-03
+  part rho(beta_z, rar_resid_FF)|Ms,Re                      N= 1217   rho=+0.088   p=2.24e-03
+
+  --- Mid (N=1210) ---
+  raw  rho(beta_z, rar_resid_JAM)                           N= 1210   rho=+0.060   p=3.70e-02
+  part rho(beta_z, rar_resid_JAM)|Ms,Re                     N= 1210   rho=+0.019   p=5.20e-01
+  raw  rho(beta_z, rar_resid_FIREFLY)                       N= 1210   rho=+0.160   p=2.40e-08
+  part rho(beta_z, rar_resid_FF)|Ms,Re                      N= 1210   rho=+0.094   p=1.05e-03
+
+  --- High (N=1216) ---
+  raw  rho(beta_z, rar_resid_JAM)                           N= 1216   rho=+0.091   p=1.46e-03
+  part rho(beta_z, rar_resid_JAM)|Ms,Re                     N= 1216   rho=+0.089   p=1.82e-03
+  raw  rho(beta_z, rar_resid_FIREFLY)                       N= 1216   rho=+0.117   p=4.18e-05
+  part rho(beta_z, rar_resid_FF)|Ms,Re                      N= 1216   rho=+0.095   p=8.65e-04
+
+======================================================================
+PART 2: KNOWN STRUCTURAL RELATIONS
+        Does beta_z track structural properties that
+        independently predict the RAR residual?
+======================================================================
+
+  2a. rho(beta_z, structural variable):
+  Full   rho(beta_z, ellipticity)                           N= 3650   rho=+0.193   p=4.93e-32
+  slow   rho(beta_z, ellipticity)                           N=  343   rho=+0.312   p=3.72e-09
+  Full   rho(beta_z, Sersic n)                              N= 3650   rho=+0.007   p=6.52e-01
+  slow   rho(beta_z, Sersic n)                              N=  343   rho=+0.024   p=6.59e-01
+  Full   rho(beta_z, LW age)                                N= 3606   rho=+0.110   p=3.44e-11
+  slow   rho(beta_z, LW age)                                N=  332   rho=+0.040   p=4.72e-01
+  Full   rho(beta_z, LW metallicity)                        N= 3606   rho=+0.045   p=7.21e-03
+  slow   rho(beta_z, LW metallicity)                        N=  332   rho=+0.128   p=1.97e-02
+  Full   rho(beta_z, MW metallicity)                        N= 3606   rho=+0.012   p=4.72e-01
+  slow   rho(beta_z, MW metallicity)                        N=  332   rho=+0.104   p=5.73e-02
+
+  2b. rho(structural variable, rar_resid):
+  Full   rho(ellipticity, rar_resid)                        N= 3650   rho=-0.206   p=1.97e-36
+  slow   rho(ellipticity, rar_resid)                        N=  343   rho=-0.043   p=4.30e-01
+  Full   rho(Sersic n, rar_resid)                           N= 3650   rho=+0.343   p=1.97e-101
+  slow   rho(Sersic n, rar_resid)                           N=  343   rho=+0.380   p=3.16e-13
+  Full   rho(LW age, rar_resid)                             N= 3606   rho=+0.292   p=8.51e-72
+  slow   rho(LW age, rar_resid)                             N=  332   rho=+0.023   p=6.80e-01
+  Full   rho(LW metallicity, rar_resid)                     N= 3606   rho=+0.150   p=1.09e-19
+  slow   rho(LW metallicity, rar_resid)                     N=  332   rho=+0.074   p=1.80e-01
+  Full   rho(MW metallicity, rar_resid)                     N= 3606   rho=+0.070   p=2.40e-05
+  slow   rho(MW metallicity, rar_resid)                     N=  332   rho=+0.100   p=6.78e-02
+
+  2c. Partial rho(beta_z, rar_resid) additionally controlling
+      for each structural variable in turn:
+  Full   partial|Ms,Re,ellipticity                          N= 3650   rho=+0.176   p=9.77e-27
+  slow   partial|Ms,Re,ellipticity                          N=  343   rho=+0.247   p=3.55e-06
+  Full   partial|Ms,Re,Sersic n                             N= 3650   rho=+0.147   p=5.36e-19
+  slow   partial|Ms,Re,Sersic n                             N=  343   rho=+0.258   p=1.29e-06
+  Full   partial|Ms,Re,LW age                               N= 3606   rho=+0.072   p=1.46e-05
+  slow   partial|Ms,Re,LW age                               N=  332   rho=+0.265   p=9.36e-07
+  Full   partial|Ms,Re,LW metallici                         N= 3606   rho=+0.091   p=4.51e-08
+  slow   partial|Ms,Re,LW metallici                         N=  332   rho=+0.237   p=1.30e-05
+  Full   partial|Ms,Re,MW metallici                         N= 3606   rho=+0.099   p=3.04e-09
+  slow   partial|Ms,Re,MW metallici                         N=  332   rho=+0.238   p=1.21e-05
+
+======================================================================
+PART 3: IS beta_z ABSORBED INTO THE JAM MASS ESTIMATE?
+        If beta_z drives the mass fit, its correlation with
+        rar_resid could be a model tautology.
+======================================================================
+
+  --- Full (N=3650) ---
+  rho(beta_z, log_Ms_Re_cyl)                                N= 3650   rho=-0.008   p=6.36e-01
+  rho(beta_z, log_Mt_Re_cyl)                                N= 3650   rho=-0.041   p=1.39e-02
+  rho(beta_z, fdm_Re_cyl)                                   N= 3650   rho=-0.084   p=3.75e-07
+
+  --- fast (N=3307) ---
+  rho(beta_z, log_Ms_Re_cyl)                                N= 3307   rho=-0.019   p=2.86e-01
+  rho(beta_z, log_Mt_Re_cyl)                                N= 3307   rho=-0.054   p=1.84e-03
+  rho(beta_z, fdm_Re_cyl)                                   N= 3307   rho=-0.070   p=5.02e-05
+
+  --- slow (N=343) ---
+  rho(beta_z, log_Ms_Re_cyl)                                N=  343   rho=-0.005   p=9.27e-01
+  rho(beta_z, log_Mt_Re_cyl)                                N=  343   rho=-0.041   p=4.52e-01
+  rho(beta_z, fdm_Re_cyl)                                   N=  343   rho=-0.288   p=5.87e-08
+
