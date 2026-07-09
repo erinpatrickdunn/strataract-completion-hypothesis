@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="media/SCH_wide.png" alt="Description" width="500">
+</p>
+
 # The Strataract Completion Hypothesis (SCH)
 
 SCH is a speculative, closed-variational-theory framework proposing that
