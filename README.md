@@ -31,8 +31,6 @@ dependency is stated explicitly rather than left implicit.
 it does not replace [`governance/`](./governance/), which is the actual
 source of truth for what's established, what's pending, and why.)*
 
-(This section is the one meant to change most often. It summarizes; it does not replace `governance/`, which is the actual source of truth for what is established, what remains open, and why.)
-
 As of **Appendix P v15** and **Governance Charter v2** (June 2026):
 
 * The core physical picture, field equation, (S^3) topology derivation, FLRW reduction, and galactic-scale empirical programme remain on settled footing.
@@ -43,7 +41,9 @@ As of **Appendix P v15** and **Governance Charter v2** (June 2026):
 * In addition, Appendix P v15 introduces a new, narrower calculational dependency under **CT-vii**: numerical evaluation of the light-mode mass ratio (m_P/m_\eta) and the channel-dependent damping rates (\gamma_\eta(T,\rho)), (\gamma_P(T,\rho)). Those quantities now gate the repaired transport sector, the recomputation of the suspended black-hole frequency claims, and any downstream cosmological or long-range propagation predictions that depend on them.
 * Two older clean-room flags in the FLRW reduction (the claimed P.9.4.2 double-count and P.9.5.3 sign error) remain explicitly open and narrowly scoped rather than silently resolved.
 
-For the full picture — what is Canonical, what is still being verified, what has been suspended or retired, and why — start at `governance/SCH_Project_Governance_Charter_v2.md`.
+For the full picture — what's Canonical, what's still being verified,
+and what's been retired and why — start at
+[`governance/SCH_Project_Governance_Charter_v2.md`](./governance/README.md).
 
 ---
 
