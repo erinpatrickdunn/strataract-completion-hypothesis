@@ -31,27 +31,19 @@ dependency is stated explicitly rather than left implicit.
 it does not replace [`governance/`](./governance/), which is the actual
 source of truth for what's established, what's pending, and why.)*
 
-As of **Appendix P v14** and **Governance Charter v2** (June 2026):
+(This section is the one meant to change most often. It summarizes; it does not replace `governance/`, which is the actual source of truth for what is established, what remains open, and why.)
 
-- The core physical picture, the field equation, the $S^3$ topology
-  derivation, and the galactic-scale empirical programme are on
-  settled footing.
-- The cosmological chirality/torsion sector — previously an open,
-  repeatedly-revised question — is now closed at the level of
-  mechanism: three independently-derived calculations agree on the
-  torsion self-coupling coefficient. What remains open there is purely
-  numerical, gated on the Bi-209 calibration below.
-- The single largest open dependency across the entire framework is
-  the **Bismuth-209 calibration experiment** (proposed, not yet run),
-  which fixes the coupling constant $\alpha$ and the condensate mass
-  $m_{\text{eff}}$. Most quantitative predictions in this repository
-  are parametric until that experiment is performed.
-- Two narrowly-scoped items are open and explicitly flagged rather than
-  silently assumed either way — see `governance/` for what they are.
+As of **Appendix P v15** and **Governance Charter v2** (June 2026):
 
-For the full picture — what's Canonical, what's still being verified,
-and what's been retired and why — start at
-[`governance/SCH_Project_Governance_Charter_v2.md`](./governance/README.md).
+* The core physical picture, field equation, (S^3) topology derivation, FLRW reduction, and galactic-scale empirical programme remain on settled footing.
+* The cosmological chirality / torsion sector — previously an open, repeatedly revised question — remains closed at the level of mechanism. The torsion self-coupling coefficient is still fixed at (-\tfrac{3\kappa\alpha}{2}) by three independent derivation routes, and the entire homogeneous cosmological ((\eta, A^0, P)) bilinear system is unaffected by the Appendix P v15 revision.
+* Appendix P v15 closes one structural gap and reopens one quantitative one in the condensate-propagation sector. The old single-carrier Theorem 4 picture has been replaced by a derived two-carrier structure: an amplitude mode (\delta\eta) and a pseudoscalar mode (\delta P), related by an SCH Gell-Mann–Oakes–Renner-type relation. Their transport is no longer treated as an asserted diffusion law; it is now derived as a damped relativistic wave equation, ballistic in vacuum and diffusive in dense media with channel-dependent damping rates.
+* Because of that repair, the **mechanism** side of black-hole / condensate propagation is on firmer footing than before, but the **quantitative propagation-frequency side is now explicitly suspended rather than silently carried forward**. In particular, the black-hole condensate frequency table in Section P.7.5.2 of earlier Appendix P versions has been retracted pending recomputation under the new transport law.
+* The single largest cross-cutting experimental dependency remains the proposed **Bi-209 calibration**, which fixes (\alpha) and constrains the condensate sector’s mass/coupling scales. Many quantitative predictions in this repository remain parametric until that experiment is performed.
+* In addition, Appendix P v15 introduces a new, narrower calculational dependency under **CT-vii**: numerical evaluation of the light-mode mass ratio (m_P/m_\eta) and the channel-dependent damping rates (\gamma_\eta(T,\rho)), (\gamma_P(T,\rho)). Those quantities now gate the repaired transport sector, the recomputation of the suspended black-hole frequency claims, and any downstream cosmological or long-range propagation predictions that depend on them.
+* Two older clean-room flags in the FLRW reduction (the claimed P.9.4.2 double-count and P.9.5.3 sign error) remain explicitly open and narrowly scoped rather than silently resolved.
+
+For the full picture — what is Canonical, what is still being verified, what has been suspended or retired, and why — start at `governance/SCH_Project_Governance_Charter_v2.md`.
 
 ---
 
