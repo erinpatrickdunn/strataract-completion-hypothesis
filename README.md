@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/SCH_wide.png" alt="Description" width="500">
+  <img src="media/SCH_wide.png" alt="Description" width="700">
 </p>
 
 # The Strataract Completion Hypothesis (SCH)
