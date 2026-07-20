@@ -1,4 +1,6 @@
-# `support/` — Data, Code, and Non-Claim Material
+# `06-Support` 
+
+## Data, Code, and Non-Claim Material
 
 This folder holds the material that backs specific empirical results
 in the papers, but doesn't itself make any theoretical claim. Nothing
