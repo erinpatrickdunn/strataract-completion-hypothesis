@@ -1,0 +1,171 @@
+========================================================================
+JOINT PARTIAL AUDIT — SCH Replication Study
+========================================================================
+
+Sample N = 3650
+  beta_z                       valid: 3650
+  rar_resid                    valid: 3650
+  rar_resid_firefly            valid: 3643
+  nsa_sersic_n                 valid: 3650
+  LW_AGE_1Re                   valid: 3650
+  Eps_MGE                      valid: 3650
+  inc_deg_cyl                  valid: 3650
+  log_Re_kpc                   valid: 3650
+  kin_class                    valid: 3650
+
+  base    controls: ['log_Ms_Re_cyl', 'log_Re_kpc']
+  joint   controls: ['log_Ms_Re_cyl', 'log_Re_kpc', 'nsa_sersic_n', 'LW_AGE_1Re']
+  maximal controls: ['log_Ms_Re_cyl', 'log_Re_kpc', 'nsa_sersic_n', 'LW_AGE_1Re', 'Eps_MGE']
+
+========================================================================
+PART A — PROGRESSIVE CONTROL SETS
+========================================================================
+
+  Residual: JAM
+  Sample         Controls                               N     rho            p
+  ------------------------------------------------------------------------
+  Full           raw                                 3650  -0.002     9.01e-01 
+  Full           |Ms,Re                              3650  +0.042     1.04e-02 *
+  Full           |Ms,Re,n,age                        3650  +0.051     2.20e-03 **
+  Full           |Ms,Re,n,age,eps                    3650  +0.058     4.87e-04 ***
+  Fast           raw                                 2835  -0.071     1.42e-04 ***
+  Fast           |Ms,Re                              2835  +0.002     9.26e-01 
+  Fast           |Ms,Re,n,age                        2835  +0.048     1.05e-02 *
+  Fast           |Ms,Re,n,age,eps                    2835  +0.045     1.77e-02 *
+  Slow           raw                                  815  +0.002     9.43e-01 
+  Slow           |Ms,Re                               815  +0.099     4.67e-03 **
+  Slow           |Ms,Re,n,age                         815  +0.071     4.28e-02 *
+  Slow           |Ms,Re,n,age,eps                     815  +0.039     2.72e-01 
+  Low            raw                                 1219  -0.147     2.60e-07 ***
+  Low            |Ms,Re                              1219  -0.001     9.75e-01 
+  Low            |Ms,Re,n,age                        1219  +0.023     4.30e-01 
+  Low            |Ms,Re,n,age,eps                    1219  +0.025     3.77e-01 
+  Low_fast       raw                                 1113  -0.170     1.26e-08 ***
+  Low_fast       |Ms,Re                              1113  -0.029     3.40e-01 
+  Low_fast       |Ms,Re,n,age                        1113  +0.000     9.97e-01 
+  Low_fast       |Ms,Re,n,age,eps                    1113  +0.006     8.44e-01 
+  Low_slow       raw                                  106  +0.039     6.94e-01 
+  Low_slow       |Ms,Re                               106  +0.078     4.24e-01 
+  Low_slow       |Ms,Re,n,age                         106  +0.039     6.92e-01 
+  Low_slow       |Ms,Re,n,age,eps                     106  +0.057     5.59e-01 
+  Mid            raw                                 1214  +0.060     3.77e-02 *
+  Mid            |Ms,Re                              1214  -0.008     7.73e-01 
+  Mid            |Ms,Re,n,age                        1214  +0.069     1.57e-02 *
+  Mid            |Ms,Re,n,age,eps                    1214  +0.070     1.41e-02 *
+  Mid_fast       raw                                 1090  +0.044     1.42e-01 
+  Mid_fast       |Ms,Re                              1090  -0.031     3.02e-01 
+  Mid_fast       |Ms,Re,n,age                        1090  +0.080     8.13e-03 **
+  Mid_fast       |Ms,Re,n,age,eps                    1090  +0.078     1.03e-02 *
+  Mid_slow       raw                                  124  -0.073     4.19e-01 
+  Mid_slow       |Ms,Re                               124  -0.047     6.03e-01 
+  Mid_slow       |Ms,Re,n,age                         124  -0.090     3.21e-01 
+  Mid_slow       |Ms,Re,n,age,eps                     124  -0.111     2.20e-01 
+  High           raw                                 1217  +0.080     5.10e-03 **
+  High           |Ms,Re                              1217  +0.064     2.54e-02 *
+  High           |Ms,Re,n,age                        1217  +0.067     2.01e-02 *
+  High           |Ms,Re,n,age,eps                    1217  +0.097     7.25e-04 ***
+  High_fast      raw                                  632  +0.054     1.74e-01 
+  High_fast      |Ms,Re                               632  +0.006     8.73e-01 
+  High_fast      |Ms,Re,n,age                         632  -0.011     7.81e-01 
+  High_fast      |Ms,Re,n,age,eps                     632  -0.013     7.41e-01 
+  High_slow      raw                                  585  -0.007     8.73e-01 
+  High_slow      |Ms,Re                               585  +0.087     3.45e-02 *
+  High_slow      |Ms,Re,n,age                         585  +0.098     1.80e-02 *
+  High_slow      |Ms,Re,n,age,eps                     585  +0.036     3.88e-01 
+
+  Residual: FF
+  Sample         Controls                               N     rho            p
+  ------------------------------------------------------------------------
+  Full           raw                                 3643  +0.219     5.97e-41 ***
+  Full           |Ms,Re                              3643  +0.117     1.14e-12 ***
+  Full           |Ms,Re,n,age                        3643  +0.128     6.98e-15 ***
+  Full           |Ms,Re,n,age,eps                    3643  +0.137     9.81e-17 ***
+  Fast           raw                                 2829  +0.192     8.05e-25 ***
+  Fast           |Ms,Re                              2829  +0.110     4.40e-09 ***
+  Fast           |Ms,Re,n,age                        2829  +0.135     6.67e-13 ***
+  Fast           |Ms,Re,n,age,eps                    2829  +0.134     7.80e-13 ***
+  Slow           raw                                  814  +0.104     2.86e-03 **
+  Slow           |Ms,Re                               814  +0.134     1.20e-04 ***
+  Slow           |Ms,Re,n,age                         814  +0.122     4.76e-04 ***
+  Slow           |Ms,Re,n,age,eps                     814  +0.086     1.41e-02 *
+  Low            raw                                 1217  +0.163     1.02e-08 ***
+  Low            |Ms,Re                              1217  +0.151     1.17e-07 ***
+  Low            |Ms,Re,n,age                        1217  +0.151     1.19e-07 ***
+  Low            |Ms,Re,n,age,eps                    1217  +0.148     2.05e-07 ***
+  Low_fast       raw                                 1111  +0.144     1.51e-06 ***
+  Low_fast       |Ms,Re                              1111  +0.134     6.96e-06 ***
+  Low_fast       |Ms,Re,n,age                        1111  +0.134     7.13e-06 ***
+  Low_fast       |Ms,Re,n,age,eps                    1111  +0.130     1.43e-05 ***
+  Low_slow       raw                                  106  +0.268     5.41e-03 **
+  Low_slow       |Ms,Re                               106  +0.226     1.99e-02 *
+  Low_slow       |Ms,Re,n,age                         106  +0.301     1.70e-03 **
+  Low_slow       |Ms,Re,n,age,eps                     106  +0.290     2.59e-03 **
+  Mid            raw                                 1210  +0.210     1.81e-13 ***
+  Mid            |Ms,Re                              1210  +0.125     1.40e-05 ***
+  Mid            |Ms,Re,n,age                        1210  +0.154     7.29e-08 ***
+  Mid            |Ms,Re,n,age,eps                    1210  +0.159     2.88e-08 ***
+  Mid_fast       raw                                 1086  +0.206     7.47e-12 ***
+  Mid_fast       |Ms,Re                              1086  +0.116     1.26e-04 ***
+  Mid_fast       |Ms,Re,n,age                        1086  +0.165     4.64e-08 ***
+  Mid_fast       |Ms,Re,n,age,eps                    1086  +0.169     2.19e-08 ***
+  Mid_slow       raw                                  124  +0.074     4.17e-01 
+  Mid_slow       |Ms,Re                               124  +0.025     7.84e-01 
+  Mid_slow       |Ms,Re,n,age                         124  +0.018     8.41e-01 
+  Mid_slow       |Ms,Re,n,age,eps                     124  +0.028     7.54e-01 
+  High           raw                                 1216  +0.142     7.21e-07 ***
+  High           |Ms,Re                              1216  +0.103     3.13e-04 ***
+  High           |Ms,Re,n,age                        1216  +0.116     4.88e-05 ***
+  High           |Ms,Re,n,age,eps                    1216  +0.121     2.38e-05 ***
+  High_fast      raw                                  632  +0.145     2.44e-04 ***
+  High_fast      |Ms,Re                               632  +0.107     7.17e-03 **
+  High_fast      |Ms,Re,n,age                         632  +0.116     3.45e-03 **
+  High_fast      |Ms,Re,n,age,eps                     632  +0.112     4.68e-03 **
+  High_slow      raw                                  584  +0.105     1.15e-02 *
+  High_slow      |Ms,Re                               584  +0.119     4.00e-03 **
+  High_slow      |Ms,Re,n,age                         584  +0.122     3.17e-03 **
+  High_slow      |Ms,Re,n,age,eps                     584  +0.064     1.21e-01 
+
+========================================================================
+PART B — INCLINATION MEDIATION
+========================================================================
+
+  Sample   Pair                                             N     rho            p
+  ----------------------------------------------------------------------
+
+  [Full]
+           rho(beta_z, inc_deg_cyl)                      3650  +0.097     4.71e-09 ***
+           rho(inc_deg_cyl, rar_resid)                   3650  +0.142     6.26e-18 ***
+           partial rho(beta_z,rar)|joint+inc             3650  +0.029     7.74e-02 
+
+  [Fast]
+           rho(beta_z, inc_deg_cyl)                      2835  +0.079     2.60e-05 ***
+           rho(inc_deg_cyl, rar_resid)                   2835  +0.130     3.30e-12 ***
+           partial rho(beta_z,rar)|joint+inc             2835  +0.041     2.96e-02 *
+
+  [Slow]
+           rho(beta_z, inc_deg_cyl)                       815  +0.273     2.41e-15 ***
+           rho(inc_deg_cyl, rar_resid)                    815  +0.465     5.03e-45 ***
+           partial rho(beta_z,rar)|joint+inc              815  -0.111     1.54e-03 **
+
+========================================================================
+PART C — QUINTILE STAIRCASES (confound-adjusted)
+========================================================================
+
+  Staircase: Full  [SKIPPED — insufficient unique values in beta_z]
+
+  Staircase: Fast  [SKIPPED — insufficient unique values in beta_z]
+
+  Staircase: Slow  [SKIPPED — insufficient unique values in beta_z]
+
+  Staircase: Mid  [SKIPPED — insufficient unique values in beta_z]
+
+========================================================================
+PART D — SERSIC N ALONE vs JOINT CONTROL
+========================================================================
+
+  Sample   Controls                       N   rho_JAM    rho_FF
+  --------------------------------------------------------------
+  Full     |Ms,Re,n                    3650  +0.053**    +0.131***
+  Full     |Ms,Re,n,age                3650  +0.051**    +0.128***
+  Slow     |Ms,Re,n                     815  +0.073*     +0.124***
+  Slow     |Ms,Re,n,age                 815  +0.071*     +0.122***
