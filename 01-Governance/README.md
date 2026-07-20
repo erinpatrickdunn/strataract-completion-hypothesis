@@ -1,4 +1,4 @@
-# `01-Governance/README.md`
+# `01-Governance`
 
 This folder contains the project's rules for how the repository operates: who has authority to change what, what process a result must pass before it enters the canonical record, and how the project's own governance documents are themselves revised and corrected.
 
