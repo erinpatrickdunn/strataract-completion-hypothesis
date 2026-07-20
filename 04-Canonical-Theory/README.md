@@ -1,4 +1,6 @@
-# `canonical/` — The Current Statement of the Framework
+# `04-Canonical-Theory` 
+
+## The Current Statement of the Framework
 
 Everything in this folder is **Tier 1** per the project's governance
 charter: it has cleared the bar the project is willing to defend
