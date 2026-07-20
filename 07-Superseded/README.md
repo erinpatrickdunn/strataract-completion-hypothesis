@@ -1,4 +1,6 @@
-# `superseded/` — Retired Material
+# `07-Superseded` 
+
+## Retired Material
 
 Everything in this folder is **Tier 3**: retired, kept for history and
 audit purposes, and **not citable as current theory under any
