@@ -1,87 +1,106 @@
 <p align="center">
-  <img src="media/SCH_wide.png" alt="Description" width="700">
+  <img src="media/SCH_wide.png" alt="The Strataract Completion Hypothesis" width="700">
 </p>
 
 # The Strataract Completion Hypothesis (SCH)
 
-SCH is a speculative, closed-variational-theory framework proposing that
-gravity has a second source beyond mass-energy: the *geometric
-organizational state* of matter. Concretely, it models every particle
-as a topological soliton with spin on a fourth spatial axis ("w-axis"),
-identifies rest mass with the magnitude of that w-axis spin, models the
-universe as a closed three-sphere ($S^3$) rotating on that axis, and
-derives gravity as gradients in a rotational pressure field (the
-"strataract") rather than curved spacetime. The mathematics is an
-Einstein-Cartan-Dirac action with a quartic spinor self-coupling; the
-physics is a set of falsifiable, scale-spanning predictions — galactic
-rotation curves, a nuclear calibration experiment, a B-meson decay
-signature, and cosmological structure — derived from three stated
-axioms rather than fit to any one of them individually.
+The **Strataract Completion Hypothesis (SCH)** is a speculative theoretical-physics framework that explores the possibility that gravity has a second source beyond conventional mass-energy: the **geometric organizational state** of matter.
 
-**This is a hypothesis under active development, not an established
-theory.** Every claim in this repository carries an explicit epistemic
-status (AXIOM, DERIVED, THEOREM, PREDICTION, CONJECTURE, or
-EXPLORATORY), and falsification conditions are stated wherever a claim
-is testable. Nothing here should be read as settled physics. Where a
-claim depends on an unmeasured parameter — most centrally, the coupling
-constant fixed by a proposed Bismuth-209 laboratory experiment — that
-dependency is stated explicitly rather than left implicit.
+SCH is built from a closed Einstein-Cartan-Dirac action with a quartic spinor self-coupling. Within that framework it develops a unified geometric picture in which elementary particles are modeled as topological solitons, rest mass is associated with rotational structure in an additional spatial degree of freedom ("w-spin"), and large-scale gravitational phenomena emerge from gradients in an underlying organizational field rather than from spacetime curvature alone.
+
+The framework spans particle physics, gravitation, cosmology, and galactic dynamics. Its central objective is not to reproduce any single observation in isolation, but to derive a coherent set of predictions from one frozen variational principle and test those predictions against independent observations.
+
+**SCH is an active research hypothesis, not an established physical theory.** The purpose of this repository is to document that research transparently: preserving successful derivations, unresolved questions, failed approaches, and historical revisions rather than presenting only final results.
 
 ---
 
-## Current Status
+# Current Project Status
 
-*(This section is the one meant to change most often. It summarizes;
-it does not replace [`governance/`](./governance/), which is the actual
-source of truth for what's established, what's pending, and why.)*
+The repository is governed by **Governance Charter v3** and the methodology documents in `01-Governance/` and `02-Methodology/`.
 
-As of **Appendix P v15** and **Governance Charter v2** (June 2026):
+The current reconstruction and project-wide audit have produced several important conclusions:
 
-* The core physical picture, field equation, (S^3) topology derivation, FLRW reduction, and galactic-scale empirical programme remain on settled footing.
-* The cosmological chirality / torsion sector — previously an open, repeatedly revised question — remains closed at the level of mechanism. The torsion self-coupling coefficient is still fixed at (-\tfrac{3\kappa\alpha}{2}) by three independent derivation routes, and the entire homogeneous cosmological ((\eta, A^0, P)) bilinear system is unaffected by the Appendix P v15 revision.
-* Appendix P v15 closes one structural gap and reopens one quantitative one in the condensate-propagation sector. The old single-carrier Theorem 4 picture has been replaced by a derived two-carrier structure: an amplitude mode (\delta\eta) and a pseudoscalar mode (\delta P), related by an SCH Gell-Mann–Oakes–Renner-type relation. Their transport is no longer treated as an asserted diffusion law; it is now derived as a damped relativistic wave equation, ballistic in vacuum and diffusive in dense media with channel-dependent damping rates.
-* Because of that repair, the **mechanism** side of black-hole / condensate propagation is on firmer footing than before, but the **quantitative propagation-frequency side is now explicitly suspended rather than silently carried forward**. In particular, the black-hole condensate frequency table in Section P.7.5.2 of earlier Appendix P versions has been retracted pending recomputation under the new transport law.
-* The single largest cross-cutting experimental dependency remains the proposed **Bi-209 calibration**, which fixes (\alpha) and constrains the condensate sector’s mass/coupling scales. Many quantitative predictions in this repository remain parametric until that experiment is performed.
-* In addition, Appendix P v15 introduces a new, narrower calculational dependency under **CT-vii**: numerical evaluation of the light-mode mass ratio (m_P/m_\eta) and the channel-dependent damping rates (\gamma_\eta(T,\rho)), (\gamma_P(T,\rho)). Those quantities now gate the repaired transport sector, the recomputation of the suspended black-hole frequency claims, and any downstream cosmological or long-range propagation predictions that depend on them.
-* Two older clean-room flags in the FLRW reduction (the claimed P.9.4.2 double-count and P.9.5.3 sign error) remain explicitly open and narrowly scoped rather than silently resolved.
+* The repository's governance, reconstruction, and canonical-theory architecture has been established and independently audited.
+* The majority of Appendix P's mechanism-level mathematical claims survive reconstruction without requiring revision.
+* The principal recurring unresolved issue is not disagreement between derivations, but the documented provenance of several effective-potential constructions that are stated as originating from the frozen action without a complete intermediate derivation presently recorded.
+* Several quantitative sectors remain intentionally parameter-dependent pending experimental calibration, most notably the proposed **Bi-209** measurement that determines the framework's coupling constant.
+* Open questions remain explicitly classified and are no longer mixed with established derivations.
 
-For the full picture — what's Canonical, what's still being verified,
-and what's been retired and why — start at
-[`governance/SCH_Project_Governance_Charter_v2.md`](./governance/README.md).
+The project therefore distinguishes clearly between:
+
+* **Established mathematical results**
+* **Construction-scoped results**
+* **Conditional claims with documented dependencies**
+* **Open research questions**
+* **Historical or superseded work**
+
+The repository's status is determined by documented methodology rather than editorial judgment.
 
 ---
 
-## Where to Find What
+# Repository Organization
 
-This repository is organized by **epistemic status**, not by topic.
-The question "is this settled?" determines which folder a document
-lives in; the question "what is it about?" is answered inside the
-document itself.
+The repository is organized by **authority and function**, not by scientific topic.
 
-| Folder | What it holds | Go here if you want... |
-|---|---|---|
-| [`canonical/`](./canonical/) | The current, citable statement of the framework: the three core papers, the formal appendix, and their direct supporting derivations. | ...the theory as it currently stands, full stop. |
-| [`governance/`](./governance/) | The project's own rules for how results get promoted, demoted, or retired, and the current classification of everything in the project. | ...to know *why* something is where it is, or what it would take to change that. |
-| [`track-b/`](./track-b/) | Active and recently-closed verification work on specific open questions — the derivations themselves, not just their conclusions. | ...to see the actual math behind a recent resolution, including the wrong turns. |
-| [`superseded/`](./superseded/) | Every retired draft, working paper, and abandoned derivation, kept in full rather than deleted. | ...history: what used to be claimed, and what replaced it. |
-| [`support/`](./support/) | Data, analysis code, and non-claim material backing the empirical sections of the papers. | ...to rerun or audit an actual computed result. |
+| Directory              | Purpose                                                                                                                                                          |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `01-Governance/`       | Repository governance, project rules, authority map, and promotion criteria.                                                                                     |
+| `02-Methodology/`      | Documentation standards, claim classification framework, scope rules, reproducibility requirements, and audit methodology.                                       |
+| `03-Reconstruction/`   | Reconstruction reports, audit reports, derivational recovery, and verification work. Reconstruction documents analyze the canonical corpus without modifying it. |
+| `04-Canonical-Theory/` | The current citable statement of SCH: Papers A–C, Appendix P, formal derivations, and canonical theory documents.                                                |
+| `05-Alternatives/`     | Alternative constructions, competing approaches, or proposed replacements that are intentionally separated from canonical theory until independently justified.  |
+| `06-Support/`          | Computational tools, replication studies, analysis pipelines, datasets, and supporting material.                                                                 |
+| `07-Superseded/`       | Historical versions of documents retained unchanged to preserve provenance and auditability.                                                                     |
 
-**The four documents to start with, in order, are in `canonical/`:**
-Paper A (the framework and its field equation), Paper B (the empirical
-and observational programme), Paper C (the particle-scale extension),
-and Appendix P (the full formal derivation). Each carries its own
-version history at the top explaining what changed and why.
+This structure reflects the project's central design principle:
 
-## A Note on How This Repository Is Maintained
+> **Methodology defines how claims are evaluated. Reconstruction determines what the existing corpus actually establishes. Canonical theory records only the current accepted framework.**
 
-This project has a specific, recurring failure mode it is organized to
-prevent: a result looking settled enough to migrate into the canonical
-record before it has actually been independently checked. The
-governance charter formalizes the rule for that (stated in full in
-`governance/`): nothing is promoted to `canonical/` without a second,
-genuinely independent derivation route reaching the same answer, and
-the audit trail — including derivations that turned out to be wrong —
-is preserved in `track-b/` and `superseded/` rather than cleaned away.
-If something in `canonical/` looks recently changed, the reason is
-almost always documented in that document's own revision history first,
-and in `governance/` second.
+---
+
+# Reading Order
+
+For readers new to the project, the recommended order is:
+
+1. Governance Charter (`01-Governance/`)
+2. Methodology (`02-Methodology/`)
+3. Paper A
+4. Appendix P
+5. Papers B and C
+6. Reconstruction reports (for derivational provenance and audit findings)
+
+Reading the methodology before the theory is intentional. The repository is designed so that every scientific claim can be interpreted within an explicit framework of documentation, scope, reproducibility, and evidence.
+
+---
+
+# Project Philosophy
+
+SCH is maintained as an auditable scientific research project rather than a collection of static papers.
+
+Several principles guide development:
+
+* Every mathematical claim is expected to have a documented derivation chain.
+* Scope limitations are explicit and are never enlarged by implication.
+* Independent reproduction is preferred before a result is promoted as established.
+* Alternative constructions remain separate from canonical theory until independently justified.
+* Historical documents are retained rather than rewritten, preserving the project's complete provenance.
+
+The goal is not to eliminate mistakes from the historical record, but to make them visible, traceable, and scientifically useful.
+
+---
+
+# Current Stage of Development
+
+Following the completion of the fermion-sector reconstruction and the first project-wide audit, the repository has transitioned from exploratory development toward systematic verification.
+
+Current work focuses on:
+
+* completing project-wide claim auditing,
+* reconstructing remaining derivational sectors,
+* strengthening effective-potential provenance,
+* empirical comparison with observational data,
+* experimental calibration of free parameters,
+* and independent reproduction of canonical derivations.
+
+As the repository evolves, governance, methodology, reconstruction, and canonical theory are updated independently so that scientific conclusions remain traceable to their documented derivations.
+
