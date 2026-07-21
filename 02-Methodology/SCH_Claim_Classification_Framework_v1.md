@@ -1,4 +1,4 @@
-# SCH_Claim_Status_Framework_v1
+# SCH Claim Status Framework v1
 
 ---
 
