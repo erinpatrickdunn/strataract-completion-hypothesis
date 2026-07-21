@@ -2,6 +2,14 @@
   <img src="media/SCH_wide.png" alt="The Strataract Completion Hypothesis" width="700">
 </p>
 
+---
+
+# New to the project?
+
+Start with 00-Orientation/ for a plain-language overview and a roadmap of the repository before opening the technical papers.
+
+---
+
 # The Strataract Completion Hypothesis (SCH)
 
 The **Strataract Completion Hypothesis (SCH)** is a speculative theoretical-physics framework that explores the possibility that gravity has a second source beyond conventional mass-energy: the **geometric organizational state** of matter.
