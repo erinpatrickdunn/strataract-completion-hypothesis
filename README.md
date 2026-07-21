@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/SCH_wide.png" alt="The Strataract Completion Hypothesis" width="700">
+  <img src="00-Orientation/media/SCH_wide.png" alt="The Strataract Completion Hypothesis" width="700">
 </p>
 
 ---
