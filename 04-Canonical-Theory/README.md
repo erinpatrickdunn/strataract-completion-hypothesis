@@ -30,7 +30,6 @@ is the fastest way to find out what's recent.
 | `SCH_CT-viii_Independent_Replication_Report_v1.md` | Independent verification of the above. |
 | `SCH_GalacticEngine_PhysicalPicture_v1.md` | The physical-picture document motivating the galactic engine mechanism (Paper A Section 2.11) and its two open calculational targets. |
 | `SCH_PT1_TopologicalPhase_v1.md` | The investigation ruling out topological quantization mechanisms for the cosmological chirality holonomy phase (Appendix P Section P.7.7.4). Its conclusion is cited directly and is unaffected by the coefficient resolution in Appendix P v14. |
-| `SCH_Replication_Study_WorkingPaper_v1.md` | Independent-replication material with no dependency on any part of the framework currently under revision. |
 
 ## What Gets a Document Moved Out of Here
 
