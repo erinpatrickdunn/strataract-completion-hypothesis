@@ -1,35 +1,97 @@
-# `06-Support` 
+# `06-Support/` — Data, Code, Verification, and Empirical Support
 
-## Data, Code, and Non-Claim Material
+This directory contains the computational, empirical, and verification
+materials that support the canonical SCH theory.
 
-This folder holds the material that backs specific empirical results
-in the papers, but doesn't itself make any theoretical claim. Nothing
-here carries an epistemic status tier the way documents in `canonical/`
-or `superseded/` do — it's infrastructure, not argument.
+Unlike the documents in `04-Canonical-Theory/`, the contents of this
+directory do **not** establish or extend the theoretical framework
+itself. Instead, they provide the analyses, software, replication
+studies, datasets, and supporting infrastructure used to evaluate,
+reproduce, or test canonical claims.
+
+Support documents are evidence and infrastructure rather than
+theoretical authority.
+
+---
+
+## `SCH_Replication_Study_WorkingPaper_v1.md`
+
+A working paper documenting the first independent replication pipeline
+investigating rotational coherence as a gravitational source variable.
+
+This document records the initial computational results obtained from
+clean data acquisition and pipeline execution. It is explicitly a
+**working paper**, not a canonical theoretical document, and should be
+understood as an evolving empirical investigation pending additional
+datasets and future analysis.
+
+---
 
 ## `staircase-v1/`
 
 The complete analysis pipeline behind Paper B Section 2 (the MaNGA DR17
-`beta_z` partial-correlation replication): the sample-construction and
-statistical-analysis scripts, their raw output logs, the merged and
-enriched data tables, and the two draft/final result write-ups that
-preceded Paper B's own prose account of the same result.
+`beta_z` partial-correlation replication): sample construction,
+statistical analysis, audit scripts, intermediate datasets, output
+logs, and the draft reports that preceded Paper B's final presentation
+of the same result.
 
-| Subfolder | Contents |
-|---|---|
-| `scripts/` | The actual analysis code — sample construction, the audits described in Paper B Section 2.5, the inclination-artifact investigation of Section 2.5, and the primary `beta_z` correlation analysis. |
-| `outputs/` | Logged output from each script run, plus the merged catalogues (`manga_merged.csv`, `manga_merged_with_rar.csv`, `manga_enriched.csv`) the analysis is built on. |
-| `docs/` | Draft and final write-ups of the result, produced before it was folded into Paper B's own prose. |
+| Subfolder  | Contents                                                                                                                                           |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `scripts/` | Analysis code used to construct the sample, perform statistical tests, execute audit procedures, and investigate possible observational artifacts. |
+| `outputs/` | Logged output from each analysis run together with the merged and enriched catalogues used throughout the study.                                   |
+| `docs/`    | Draft and final reports generated before the results were incorporated into Paper B.                                                               |
 
-If you want to check Paper B Section 2's numbers rather than take them
-on faith, this is where you'd rerun the pipeline. `staircase-v1/`
-has its own `README.md` with more specific instructions — check there
-first for anything about running the scripts themselves.
+Researchers wishing to independently reproduce the Paper B analysis
+should begin here. The directory contains its own `README.md`
+describing the execution workflow in greater detail.
 
-## Adding to This Folder
+---
 
-If a future test in Paper B or elsewhere generates its own analysis
-pipeline (the JWST standard ruler test, the antipodal CMB correlation
-search, and others are proposed but not yet executed), it should get
-its own versioned subfolder here, following the same
-scripts/outputs/docs pattern as `staircase-v1/`.
+## `track-b/`
+
+Supporting material associated with active Track B investigations.
+
+Track B contains research that is intentionally separated from the
+canonical corpus while undergoing further investigation, validation,
+or reconstruction. Material placed here should not be interpreted as
+adopted canonical theory unless explicitly promoted through the
+governance process.
+
+---
+
+## Scope of This Directory
+
+Typical contents include:
+
+* computational analysis pipelines,
+* datasets,
+* software,
+* numerical experiments,
+* replication studies,
+* validation reports,
+* observational investigations,
+* supporting documentation.
+
+Documents in this directory may support canonical claims, challenge
+them, or simply provide the infrastructure required to reproduce
+published results. They do not, by themselves, establish the canonical
+theory.
+
+---
+
+## Adding to This Directory
+
+Future empirical investigations should generally receive their own
+versioned subdirectory following the same organizational pattern as
+`staircase-v1/`, separating:
+
+* source code,
+* generated outputs,
+* datasets,
+* and supporting documentation.
+
+Keeping computational work isolated from the canonical papers preserves
+a clear distinction between **theory**, **evidence**, and
+**implementation**, while ensuring that every published result remains
+fully reproducible.
+
