@@ -23,7 +23,7 @@ document — what changed from the previous draft, and why. That history
 is the fastest way to find out what's recent.
 
 ## Supporting Derivations 
-(Companion Documents Pending Canonical Review as of Jul-22-2026)
+(Companion Documents Pending Canonical Review since Audit as of Jul-22-2026)
 
 | Document | What it is |
 |---|---|
