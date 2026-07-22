@@ -13,8 +13,8 @@ expected to gain new drafts over time — but everything here is the
 
 | Document | What it is |
 |---|---|
-| `Paper_A_Draft_2_4.md` | The framework itself: the physical picture, the modified field equation, its derivation, and the primary falsifiable predictions. Start here. |
-| `Paper_B_Draft_1_8.md` | The empirical and observational programme: computed results from public data, consistency checks, and proposed tests with stated falsification conditions. |
+| `Paper_A_Draft_2_5.md` | The framework itself: the physical picture, the modified field equation, its derivation, and the primary falsifiable predictions. Start here. |
+| `Paper_B_Draft_1_9.md` | The empirical and observational programme: computed results from public data, consistency checks, and proposed tests with stated falsification conditions. |
 | `Paper_C_Draft_1_4.md` | An extension to the particle scale: a conditional, parameter-free prediction for a B-meson decay anomaly, contingent on a single calculational target. |
 | `SCH_Appendix_P_v14.md` | The full formal derivation: the action, the variational closure, every theorem, and the complete resolution record for the cosmological chirality sector. |
 
