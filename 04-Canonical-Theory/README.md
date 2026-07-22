@@ -22,7 +22,7 @@ Each of these carries its own revision history at the top of the
 document — what changed from the previous draft, and why. That history
 is the fastest way to find out what's recent.
 
-## Supporting Derivations
+## Supporting Derivations (Companion Documents Pending Canonical Review as of Jul-22-2026)
 
 | Document | What it is |
 |---|---|
