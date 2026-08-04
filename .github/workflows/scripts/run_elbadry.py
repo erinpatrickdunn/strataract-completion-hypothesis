@@ -1,130 +1,104 @@
+# scripts/run_elbadry_tap.py
 import os
-import requests
-from astropy.table import Table
 import numpy as np
-from math import sqrt
+import csv
+from astroquery.gaia import Gaia
+from astropy.coordinates import SkyCoord
+import astropy.units as u
+import time
 
 # Constants
-G = 6.67430e-11  # m^3 kg^-1 s^-2
-M_sun = 1.98847e30  # kg
-AU = 1.495978707e11  # m
+G = 6.67430e-11
+M_sun = 1.98847e30
+AU = 1.495978707e11
 
-# Attempt a few known public URLs (Dataverse then Zenodo variants)
-urls = [
-    "https://dataverse.harvard.edu/api/access/datafile/4661493?format=original&gbrecs=true",
-    "https://zenodo.org/record/4609820/files/all_columns_catalog_shift.fits.gz",
-    "https://zenodo.org/record/4607167/files/all_columns_catalog_shift.fits.gz"
-]
-fname = "elbadry_widebinaries_shift.fits.gz"
+# Config from env
+MAX_PRIMARIES = int(os.environ.get("GAIA_MAX_PRIMARIES", "200"))
+A_MAX_AU = float(os.environ.get("GAIA_A_MAX_AU", "20000.0"))
 
-if not os.path.exists(fname):
-    for url in urls:
-        try:
-            print("Trying:", url)
-            r = requests.get(url, stream=True, timeout=30)
-            if r.status_code == 200:
-                with open(fname, "wb") as f:
-                    for chunk in r.iter_content(chunk_size=8192):
-                        if chunk:
-                            f.write(chunk)
-                print("Downloaded:", fname, "from", url)
-                break
-            else:
-                print("URL returned status", r.status_code)
-        except Exception as e:
-            print("Download attempt failed:", e)
-    else:
-        raise RuntimeError("All download attempts failed. Provide a smaller clean FITS/CSV or enable a TAP-based workflow.")
+print(f"MAX_PRIMARIES={MAX_PRIMARIES}, A_MAX_AU={A_MAX_AU}")
 
-# Read table
-tbl = Table.read(fname)
-print("Rows:", len(tbl))
-print("Columns (sample):", tbl.colnames[:40])
+# 1) get a small sample of nearby primaries
+adql_prim = f"""
+SELECT source_id, ra, dec, parallax, parallax_error, pmra, pmdec, pmra_error, pmdec_error, phot_g_mean_mag, ruwe
+FROM gaiadr3.gaia_source
+WHERE parallax >= 10
+  AND phot_g_mean_mag < 14
+  AND ruwe < 1.4
+ORDER BY parallax DESC
+LIMIT {MAX_PRIMARIES}
+"""
+print("Submitting primary query...")
+job = Gaia.launch_job_async(adql_prim)
+prim_tbl = job.get_results().to_pandas()
+print("Primaries:", len(prim_tbl))
 
-# Helper to select column if present
-def get_col(tbl, names):
-    for n in names:
-        if n in tbl.colnames:
-            return tbl[n]
-    return None
+def find_neighbors(primary_row, a_max_au=A_MAX_AU):
+    ra = float(primary_row['ra']); dec = float(primary_row['dec']); par = float(primary_row['parallax'])
+    if par <= 0 or np.isnan(par):
+        return None
+    dist_pc = 1000.0 / par
+    ang_arcsec = a_max_au / dist_pc
+    radius = (ang_arcsec/3600.0) * u.deg
+    coord = SkyCoord(ra=ra*u.deg, dec=dec*u.deg)
+    # fetch minimal columns
+    try:
+        c = Gaia.cone_search_async(coord, radius, columns="source_id, ra, dec, parallax, parallax_error, pmra, pmdec, pmra_error, pmdec_error, phot_g_mean_mag, ruwe")
+    except Exception as e:
+        print("Cone search failed for primary", primary_row['source_id'], ":", e)
+        return None
+    tbl = c.get_results().to_pandas()
+    tbl = tbl[tbl['source_id'] != primary_row['source_id']]
+    if len(tbl) == 0:
+        return None
+    coords_neighbors = SkyCoord(ra=tbl['ra'].values*u.deg, dec=tbl['dec'].values*u.deg)
+    sep = coord.separation(coords_neighbors).arcsec
+    tbl = tbl.assign(sep_arcsec=sep, dist_pc=dist_pc)
+    tbl = tbl.assign(r_proj_au = tbl['sep_arcsec'] * dist_pc)
+    return tbl
 
-par1 = get_col(tbl, ['parallax_1','parallax1','parallax'])
-par_err1 = get_col(tbl, ['parallax_error_1','parallax_error1','parallax_error'])
-rproj_au = get_col(tbl, ['r_proj_au','rproj_au','r_proj'])
-sep_arcsec = get_col(tbl, ['s','sep','sep_arcsec','r_ang'])
-pmra_err1 = get_col(tbl, ['pmra_error_1','pmra_error1','pmra_err','pmra_error'])
-pmdec_err1 = get_col(tbl, ['pmdec_error_1','pmdec_error1','pmdec_err','pmdec_error'])
+results = []
+start = time.time()
+for idx, prow in prim_tbl.iterrows():
+    neigh = find_neighbors(prow, a_max_au=A_MAX_AU)
+    if neigh is None or len(neigh)==0:
+        continue
+    pmra_err = neigh['pmra_error'].fillna(0.02).astype(float).values
+    pmdec_err = neigh['pmdec_error'].fillna(0.02).astype(float).values
+    pmerr = np.sqrt(pmra_err**2 + pmdec_err**2)
+    dist_pc = neigh['dist_pc'].astype(float).values
+    sigma_v_kms = 4.74047 * pmerr * dist_pc
+    r_proj_m = neigh['r_proj_au'].astype(float).values * AU
+    M_tot = 2.0 * M_sun
+    v_kms = np.sqrt(G * M_tot / r_proj_m) / 1000.0
+    valid_mask = np.isfinite(v_kms) & (v_kms > 1e-9)
+    for i in np.where(valid_mask)[0]:
+        alpha_eta_limit = 2.0 * (sigma_v_kms[i] / v_kms[i])
+        results.append({
+            'primary_source_id': int(prow['source_id']),
+            'neighbor_source_id': int(neigh.iloc[i]['source_id']),
+            'r_proj_au': float(neigh.iloc[i]['r_proj_au']),
+            'v_kms': float(v_kms[i]),
+            'sigma_v_kms': float(sigma_v_kms[i]),
+            'alpha_eta_limit': float(alpha_eta_limit),
+            'primary_parallax_mas': float(prow['parallax']),
+            'neighbor_parallax_mas': float(neigh.iloc[i]['parallax'])
+        })
 
-# distance in pc
-if par1 is not None:
-    median_par = np.nanmedian(par1)
-    if median_par > 1e-3:
-        dist1_pc = 1000.0 / par1
-    else:
-        dist1_pc = 1.0 / par1
-elif par1 is None and par_err1 is not None:
-    # fallback if only single parallax column name different; try 'parallax' directly
-    raise RuntimeError("Parallax column not found by heuristics; inspect table.colnames and adjust.")
+elapsed = time.time() - start
+print("Completed in {:.1f}s; found {} pairs".format(elapsed, len(results)))
+if len(results) > 0:
+    arr = np.array([r['alpha_eta_limit'] for r in results])
+    print('alpha*eta percentiles (10,50,90):', np.nanpercentile(arr, [10,50,90]))
 else:
-    dist1_pc = np.full(len(tbl), 100.0)
+    print("No pairs found; consider raising MAX_PRIMARIES or A_MAX_AU.")
 
-# projected separation in meters
-if rproj_au is not None:
-    r_proj_m = np.array(rproj_au, dtype=float) * AU
-elif sep_arcsec is not None:
-    r_proj_au_calc = np.array(sep_arcsec, dtype=float) * np.array(dist1_pc)
-    r_proj_m = r_proj_au_calc * AU
-else:
-    # try RA/Dec compute if necessary (slower)
-    ra1 = get_col(tbl, ['ra_1','ra1','ra'])
-    dec1 = get_col(tbl, ['dec_1','dec1','dec'])
-    ra2 = get_col(tbl, ['ra_2','ra2'])
-    dec2 = get_col(tbl, ['dec_2','dec2'])
-    if ra1 is not None and dec1 is not None and ra2 is not None and dec2 is not None:
-        import astropy.coordinates as coord
-        import astropy.units as u
-        c1 = coord.SkyCoord(ra=np.array(ra1)*u.deg, dec=np.array(dec1)*u.deg)
-        c2 = coord.SkyCoord(ra=np.array(ra2)*u.deg, dec=np.array(dec2)*u.deg)
-        sep = c1.separation(c2).arcsec
-        r_proj_au_calc = sep * np.array(dist1_pc)
-        r_proj_m = r_proj_au_calc * AU
-    else:
-        raise RuntimeError('Cannot determine projected separation: no suitable columns found. Inspect tbl.colnames and adjust mapping.')
-
-# pm error
-if pmra_err1 is not None and pmdec_err1 is not None:
-    pmerr_masyr = np.sqrt(np.array(pmra_err1, dtype=float)**2 + np.array(pmdec_err1, dtype=float)**2)
-else:
-    print('PM error columns not found; using default sigma_mu = 0.02 mas/yr')
-    pmerr_masyr = np.full(len(tbl), 0.02)
-
-dist_pc = np.array(dist1_pc, dtype=float)
-sigma_v_kms = 4.74047 * pmerr_masyr * dist_pc
-
-# orbital speed
-M_tot = 2.0 * M_sun
-v_kms = np.sqrt(G * M_tot / r_proj_m) / 1000.0
-
-mask = np.isfinite(v_kms) & (v_kms > 1e-9)
-alpha_eta_limits = np.full(len(tbl), np.nan)
-alpha_eta_limits[mask] = 2.0 * (sigma_v_kms[mask] / v_kms[mask])
-
-valid = ~np.isnan(alpha_eta_limits)
-vals = alpha_eta_limits[valid]
-
-print('Computed alpha*eta limits for', np.sum(mask), 'systems')
-if len(vals) > 0:
-    print('alpha*eta percentiles (10,50,90):', np.nanpercentile(vals, [10,50,90]))
-else:
-    print('No valid limits computed. Inspect columns and mask.')
-
-# Save CSV
-import csv
-outname = 'alpha_eta_limits_sample.csv'
+outname = 'gaia_small_alpha_eta_limits.csv'
 with open(outname, 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(['index','alpha_eta_limit','v_kms','sigma_v_kms','r_proj_au'])
-    for i in range(len(tbl)):
-        if valid[i]:
-            writer.writerow([i, alpha_eta_limits[i], v_kms[i], sigma_v_kms[i], r_proj_m[i]/AU])
-print('Wrote sample CSV:', outname)
+    writer = csv.DictWriter(csvfile, fieldnames=list(results[0].keys()) if results else ['note'])
+    if results:
+        writer.writeheader()
+        writer.writerows(results)
+    else:
+        writer.writerow({'note': 'no_results'})
+print('Wrote', outname)
