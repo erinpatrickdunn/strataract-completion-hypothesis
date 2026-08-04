@@ -1,3 +1,0 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/erinpatrickdunn/strataract-completion-hypothesis/blob/main/06-Support/phenom_wf_binary_and_lensing.ipynb)
-
-Open the phenomenological weak-field notebook in Google Colab with one click. Colab has numpy and matplotlib preinstalled, so you should be able to run the cells immediately. If you add nonstandard dependencies later, I'll update this file with a pip install cell or a requirements.txt for Binder/Codespaces.
