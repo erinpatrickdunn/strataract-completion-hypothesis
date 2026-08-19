@@ -1,0 +1,38 @@
+&control
+  calculation = 'bands'
+  prefix = 'te_eps-0.00500_cut2'
+  pseudo_dir = '../pseudopotentials/'
+  outdir = './tmp'
+  verbosity = 'high'
+/
+&system
+  ibrav = 4
+  celldm(1) = 8.44699721
+  celldm(3) = 1.31933330
+  nat = 3
+  ntyp = 1
+  ecutwfc = 80
+  ecutrho = 640
+  noncolin = .true.
+  lspinorb = .true.
+  occupations = 'smearing'
+  smearing = 'gaussian'
+  degauss = 0.005
+  nbnd = 24
+/
+&electrons
+  conv_thr = 1.0d-9
+/
+ATOMIC_SPECIES
+  Te  127.60  Te.rel-pbe-n-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+  Te   0.2690   0.0000   0.6667
+  Te   0.0000   0.2690   0.3333
+  Te  -0.2690  -0.2690   0.0000
+K_POINTS crystal_b
+  5
+  0.00000  0.00000  0.00000  20   ! Gamma
+  0.33333  0.33333  0.00000  20   ! K
+  0.33333  0.33333  0.50000   5   ! H  <-- state of interest
+  0.00000  0.00000  0.50000  20   ! A
+  0.00000  0.00000  0.00000   1   ! Gamma

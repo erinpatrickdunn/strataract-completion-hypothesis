@@ -1,0 +1,1 @@
+43b4c68d0b0bb44ad22fa7d0b8b2f490a931155935e46a876b3b65b0e035ca23  pseudopotentials/Te.rel-pbe-n-rrkjus_psl.1.0.0.UPF
