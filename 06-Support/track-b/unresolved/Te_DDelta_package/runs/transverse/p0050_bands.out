@@ -1,0 +1,329 @@
+
+     Program PWSCF v.7.5 starts on 20Aug2026 at  8: 7: 4 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on       2 processor cores
+     Number of MPI processes:                 2
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     1 nodes
+     1444 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from strain_trans_p0050/bands.in
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     file Te.rel-pbe-n-rrkjus_psl.1.0.0.UPF: wavefunction(s)  5S renormalized
+
+     Atomic positions and unit cell read from directory:
+     /home/user/workspace/qe_runs/strain_trans_p0050/out/tetrans_p0050.save/
+
+
+     R & G space division:  proc/nbgrp/npool/nimage =       2
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         741     489    150                30505    16611    2718
+     Max         742     490    151                30510    16614    2721
+     Sum        1483     979    301                61015    33225    5439
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       8.4650  a.u.
+     unit-cell volume          =     695.2907 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            1
+     number of electrons       =        18.00
+     number of Kohn-Sham states=           28
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     300.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Non magnetic calculation with spin-orbit
+
+
+     celldm(1)=   8.465028  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.499989   0.866023   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.323585 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577339 -0.000000 )  
+               b(2) = (  0.000000  1.154704  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.755524 )  
+
+
+     PseudoPot. # 1 for Te read from file:
+     /home/user/workspace/qe_runs/pseudo/Te.rel-pbe-n-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 7fd30b6833abd190471e4dcc2367351b
+     Pseudo is Ultrasoft + core correction, Zval =  6.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Using radial grid of 1245 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+     Te                6.00   127.60000     Te( 1.00)
+
+     No symmetry found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        Te     tau(   1) = (   0.2636000   0.0000000   0.4411950  )
+         2        Te     tau(   2) = (  -0.1317971   0.2282836   0.8823902  )
+         3        Te     tau(   3) = (  -0.1318029  -0.2282836   0.0000000  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1        Te     tau(   1) = (  0.2636000  0.0000000  0.3333333  )
+         2        Te     tau(   2) = (  0.0000000  0.2636000  0.6666667  )
+         3        Te     tau(   3) = ( -0.2636000 -0.2636000  0.0000000  )
+
+     number of k points=     7  Gaussian smearing, width (Ry)=  0.0100
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.3333333   0.5773477   0.0000000), wk =   0.1428571
+        k(    2) = (   0.3333333   0.5773477   0.1511047), wk =   0.1428571
+        k(    3) = (   0.3333333   0.5773477   0.3022095), wk =   0.1428571
+        k(    4) = (   0.3333333   0.5773477   0.3777618), wk =   0.1428571
+        k(    5) = (   0.3333333   0.5773477   0.4533142), wk =   0.1428571
+        k(    6) = (   0.3333333   0.5773477   0.6044190), wk =   0.1428571
+        k(    7) = (   0.0000000   0.0000000   0.3777618), wk =   0.1428571
+
+                       cryst. coord.
+        k(    1) = (   0.3333333   0.3333333   0.0000000), wk =   0.1428571
+        k(    2) = (   0.3333333   0.3333333   0.2000000), wk =   0.1428571
+        k(    3) = (   0.3333333   0.3333333   0.4000000), wk =   0.1428571
+        k(    4) = (   0.3333333   0.3333333   0.5000000), wk =   0.1428571
+        k(    5) = (   0.3333333   0.3333333   0.6000000), wk =   0.1428571
+        k(    6) = (   0.3333333   0.3333333   0.8000000), wk =   0.1428571
+        k(    7) = (   0.0000000   0.0000000   0.5000000), wk =   0.1428571
+
+     Dense  grid:    61015 G-vectors     FFT dimensions: (  48,  48,  64)
+
+     Smooth grid:    33225 G-vectors     FFT dimensions: (  40,  40,  54)
+
+     Dynamical RAM for                 wfc:       1.77 MB
+
+     Dynamical RAM for     wfc (w. buffer):       1.77 MB
+
+     Dynamical RAM for           str. fact:       0.47 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:       3.23 MB
+
+     Dynamical RAM for                qrad:       3.64 MB
+
+     Dynamical RAM for          rho,v,vnew:      12.34 MB
+
+     Dynamical RAM for           G-vectors:       1.87 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.14 MB
+
+     Dynamical RAM for          <psi|beta>:       0.09 MB
+
+     Dynamical RAM for                 psi:       3.55 MB
+
+     Dynamical RAM for                hpsi:       3.55 MB
+
+     Dynamical RAM for                spsi:       3.55 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:       2.68 MB
+
+     Dynamical RAM for           addusdens:     285.33 MB
+
+     Estimated static dynamical RAM per process >      28.75 MB
+
+     Estimated max dynamical RAM per process >     314.08 MB
+
+     Estimated total dynamical RAM >     628.16 MB
+
+     The potential is recalculated from file :
+     /home/user/workspace/qe_runs/strain_trans_p0050/out/tetrans_p0050.save/charge-density
+
+     Starting wfcs are   24 randomized atomic wfcs +    4 random wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     Computing kpt #:     1  of     7
+     total cpu time spent up to now is        2.0 secs
+
+     Computing kpt #:     2  of     7
+     total cpu time spent up to now is        2.6 secs
+
+     Computing kpt #:     3  of     7
+     total cpu time spent up to now is        3.4 secs
+
+     Computing kpt #:     4  of     7
+     total cpu time spent up to now is        4.4 secs
+
+     Computing kpt #:     5  of     7
+     total cpu time spent up to now is        5.1 secs
+
+     Computing kpt #:     6  of     7
+     total cpu time spent up to now is        5.8 secs
+
+     Computing kpt #:     7  of     7
+     total cpu time spent up to now is        6.7 secs
+
+     ethr =  1.00E-06,  avg # of iterations = 35.6
+
+     total cpu time spent up to now is        6.7 secs
+
+     End of band structure calculation
+
+          k = 0.3333 0.5773 0.0000 (  4164 PWs)   bands (ev):
+
+    -6.5770  -6.5770  -4.7533  -4.7504  -4.7504  -4.7392   1.1673   1.3558
+     1.3558   1.3680   2.6830   2.6830   2.7826   2.9732   2.9732   3.0127
+     3.3721   3.3721   8.5862   8.6278   8.7915   8.7915   9.0312   9.0312
+    10.7400  10.7400  11.7329  11.7329
+
+          k = 0.3333 0.5773 0.1511 (  4161 PWs)   bands (ev):
+
+    -6.4733  -6.4679  -5.2249  -5.2199  -4.3675  -4.3572   0.8096   0.8365
+     1.1651   1.3121   1.8929   2.0072   2.9417   3.1222   3.9761   4.0387
+     4.3627   4.5718   7.8862   8.0327   8.4432   8.4961   8.5099   8.5724
+    11.0274  11.0769  11.4906  11.5307
+
+          k = 0.3333 0.5773 0.3022 (  4152 PWs)   bands (ev):
+
+    -6.1735  -6.1641  -5.7296  -5.7196  -4.1314  -4.1256   0.7119   0.7120
+     0.7728   0.8122   1.1044   1.2099   4.2829   4.3860   5.2457   5.4552
+     5.5051   5.8626   6.4907   6.5867   7.4029   7.5760   7.6549   7.7038
+    11.6611  11.6803  11.8873  11.9314
+
+          k = 0.3333 0.5773 0.3778 (  4134 PWs)   bands (ev):
+
+    -5.9649  -5.9649  -5.9581  -5.9511  -4.0961  -4.0961   0.6764   0.6764
+     0.8253   0.8783   0.9510   0.9510   4.7348   4.7348   5.6803   5.6803
+     5.9267   6.0656   6.0656   6.0659   7.1974   7.2624   7.4299   7.4299
+    11.7662  11.7662  12.4351  12.4388
+
+          k = 0.3333 0.5773 0.4533 (  4152 PWs)   bands (ev):
+
+    -6.1735  -6.1641  -5.7296  -5.7196  -4.1314  -4.1256   0.7119   0.7120
+     0.7728   0.8122   1.1044   1.2099   4.2829   4.3860   5.2457   5.4552
+     5.5051   5.8626   6.4907   6.5867   7.4029   7.5760   7.6549   7.7038
+    11.6611  11.6803  11.8872  11.9314
+
+          k = 0.3333 0.5773 0.6044 (  4161 PWs)   bands (ev):
+
+    -6.4733  -6.4679  -5.2249  -5.2199  -4.3675  -4.3572   0.8096   0.8365
+     1.1651   1.3121   1.8929   2.0072   2.9417   3.1222   3.9761   4.0387
+     4.3627   4.5718   7.8862   8.0327   8.4432   8.4961   8.5099   8.5724
+    11.0274  11.0769  11.4906  11.5307
+
+          k = 0.0000 0.0000 0.3778 (  4190 PWs)   bands (ev):
+
+    -6.8284  -6.8284  -6.8254  -6.8254  -2.3143  -2.3143   1.7556   1.7556
+     3.0537   3.0537   3.3369   3.3369   4.4390   4.4390   4.6567   4.6567
+     4.9326   4.9326   6.3233   6.3233   6.4095   6.4095   6.6449   6.6449
+     9.9443   9.9443  11.1885  11.1893
+
+     Writing all to output data dir /home/user/workspace/qe_runs/strain_trans_p0050/out/tetrans_p0050.save/ :
+     XML data file, pseudopotentials, collected wavefunctions
+
+     init_run     :      0.89s CPU      1.02s WALL (       1 calls)
+     electrons    :      5.36s CPU      5.52s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     wfcinit:atom :      0.00s CPU      0.00s WALL (       7 calls)
+     wfcinit:wfcr :      0.26s CPU      0.28s WALL (       7 calls)
+     potinit      :      0.16s CPU      0.17s WALL (       1 calls)
+     hinit0       :      0.43s CPU      0.43s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      5.36s CPU      5.52s WALL (       1 calls)
+     v_of_rho     :      0.02s CPU      0.03s WALL (       1 calls)
+     v_h          :      0.00s CPU      0.00s WALL (       1 calls)
+     v_xc         :      0.02s CPU      0.02s WALL (       1 calls)
+     newd         :      0.28s CPU      0.40s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.00s CPU      0.01s WALL (       7 calls)
+     cegterg      :      4.93s CPU      5.05s WALL (      16 calls)
+
+     Called by sum_band:
+
+     Called by *egterg:
+     cdiaghg      :      0.21s CPU      0.21s WALL (     256 calls)
+     cegterg:over :      0.27s CPU      0.28s WALL (     249 calls)
+     cegterg:upda :      0.17s CPU      0.17s WALL (     249 calls)
+     cegterg:last :      0.34s CPU      0.34s WALL (     103 calls)
+     h_psi        :      3.80s CPU      3.92s WALL (     272 calls)
+     s_psi        :      0.24s CPU      0.24s WALL (     272 calls)
+     g_psi        :      0.05s CPU      0.05s WALL (     249 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.29s CPU      0.29s WALL (     272 calls)
+     vloc_psi     :      3.26s CPU      3.37s WALL (     272 calls)
+                                        0.00s GPU  (     272 calls)
+     add_vuspsi   :      0.24s CPU      0.24s WALL (     272 calls)
+
+     General routines
+     calbec       :      0.29s CPU      0.29s WALL (     272 calls)
+     fft          :      0.18s CPU      0.18s WALL (      19 calls)
+     ffts         :      0.14s CPU      0.14s WALL (       4 calls)
+     fftw         :      2.86s CPU      2.95s WALL (   12392 calls)
+     interpolate  :      0.14s CPU      0.14s WALL (       4 calls)
+     davcio       :      0.01s CPU      0.01s WALL (      14 calls)
+
+     Parallel routines
+
+     PWSCF        :      6.43s CPU     12.00s WALL
+
+
+   This run was terminated on:   8: 7:16  20Aug2026            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

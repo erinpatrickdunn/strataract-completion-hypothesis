@@ -1,0 +1,5 @@
+&projwfc
+  prefix   = 'te0'
+  outdir   = '/home/user/workspace/qe_runs/strain_0/out'
+  filproj  = 'te0_proj'
+/

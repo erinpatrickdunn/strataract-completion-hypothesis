@@ -1,0 +1,6 @@
+&projwfc
+  prefix   = 'teH'
+  outdir   = '/home/user/workspace/qe_runs/strain_H_single/out'
+  filproj  = 'teH_proj'
+  lsym     = .true.
+/

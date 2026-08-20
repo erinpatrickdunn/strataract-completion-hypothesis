@@ -1,0 +1,46 @@
+&control
+  calculation  = 'bands'
+  prefix       = 'tepois_m0050'
+  pseudo_dir   = '/home/user/workspace/qe_runs/pseudo'
+  outdir       = '/home/user/workspace/qe_runs/strain_pois_m0050/out'
+  verbosity    = 'high'
+  restart_mode = 'from_scratch'
+/
+&system
+  ibrav       = 0
+  nat         = 3
+  ntyp        = 1
+  ecutwfc     = 50.0
+  ecutrho     = 300.0
+  noncolin     = .true.
+  lspinorb     = .true.
+  occupations  = 'smearing'
+  smearing     = 'gauss'
+  degauss      = 0.01
+  nspin        = 4
+  nbnd         = 28
+/
+&electrons
+  conv_thr     = 1.0D-8
+  diagonalization = 'david'
+  diago_thr_init = 1.0D-6
+/
+ATOMIC_SPECIES
+  Te  127.60  Te.rel-pbe-n-rrkjus_psl.1.0.0.UPF
+CELL_PARAMETERS {angstrom}
+  4.4712   0.000000   0.000000
+ -2.2356   3.872140   0.000000
+  0.0000   0.000000   5.8994
+ATOMIC_POSITIONS {crystal}
+  Te  0.2636   0.0000   0.3333333
+  Te  0.0000   0.2636   0.6666667
+  Te -0.2636  -0.2636   0.0000000
+K_POINTS {crystal}
+7
+  0.3333333  0.3333333  0.0000000  1.0
+  0.3333333  0.3333333  0.2000000  1.0
+  0.3333333  0.3333333  0.4000000  1.0
+  0.3333333  0.3333333  0.5000000  1.0
+  0.3333333  0.3333333  0.6000000  1.0
+  0.3333333  0.3333333  0.8000000  1.0
+  0.0000000  0.0000000  0.5000000  1.0

@@ -1,0 +1,36 @@
+&control
+ calculation  = 'scf'
+ prefix       = 'tehc2clamp_m0050'
+ pseudo_dir   = '/home/user/workspace/qe_runs/pseudo'
+ outdir       = '/home/user/workspace/qe_runs/strain_hc2_clamp_m0050/out'
+ verbosity    = 'low'
+/
+&system
+ ibrav       = 0
+ nat          = 3
+ ntyp         = 1
+ noncolin     = .true.
+ lspinorb     = .true.
+ ecutwfc      = 70
+ ecutrho      = 560
+ nbnd         = 28
+ occupations  = 'smearing'
+ smearing     = 'gauss'
+ degauss      = 0.01
+/
+&electrons
+ conv_thr     = 1.0d-8
+ mixing_beta  = 0.7
+/
+ATOMIC_SPECIES
+ Te  127.60  Te.rel-pbe-n-rrkjus_psl.1.0.0.UPF
+CELL_PARAMETERS angstrom
+  4.45720000  0.00000000  0.00000000
+  -2.22860000  3.86004843  0.00000000
+  0.00000000  0.00000000  5.89935500
+ATOMIC_POSITIONS crystal
+ Te 0.2636   0.0000   0.3333333
+ Te 0.0000   0.2636   0.6666667
+ Te -0.2636  -0.2636   0.0000000
+K_POINTS automatic
+ 6 6 6  0 0 0

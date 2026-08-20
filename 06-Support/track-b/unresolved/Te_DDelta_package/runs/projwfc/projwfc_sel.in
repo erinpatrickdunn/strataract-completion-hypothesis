@@ -1,0 +1,13 @@
+&projwfc
+  prefix   = 'te0'
+  outdir   = '/home/user/workspace/qe_runs/strain_0/out'
+  filproj  = 'te0_proj_sel'
+  kpoint(1)= 7
+  kband(1) = 17
+  kpoint(2)= 7
+  kband(2) = 18
+  kpoint(3)= 7
+  kband(3) = 19
+  kpoint(4)= 7
+  kband(4) = 20
+/
